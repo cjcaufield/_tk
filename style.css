@@ -35,7 +35,7 @@ h4, h5, h6 {
 }
 */
 /* Center the navbar items */
-/*
+
  @media (min-width: 768px) {
      .navbar-nav {
          float:none;
@@ -44,13 +44,17 @@ h4, h5, h6 {
          table-layout: fixed;
      }
  }
-*/
+
 div.navbar div, .dropdown-menu li a {
     /*font-family: 'Lato', Georgia, Times, serif;*/
     /*font-family: "Apercu Bold", sans-serif; font-weight: bold; font-style: normal;*/
     font-family: "Apercu Light", sans-serif; font-style: normal;
     font-size: 17px;
     text-transform: uppercase;
+}
+
+.dropdown-menu li a {
+    text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,8 +95,9 @@ p, div, blockquote, div.site-info {
 }
 
 .navbar {
-    margin: 0px;
-    border: 0px;
+    /*margin: 0px;*/
+    /*border: 0px;*/
+    margin-bottom: 0px;
     background-color: #fff;
 }
 
@@ -288,4 +293,28 @@ object {
 	background: -ms-linear-gradient(top, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
 	background: linear-gradient(to bottom, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3789c4', endColorstr='#69b3b3', GradientType=0 );
+}
+
+@media (min-width: 768px)
+{
+    .vcenter-row-sm {
+        display:table;
+    }
+    .vcenter-sm {
+        display:table-cell;
+        vertical-align:middle;
+        float:none;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .vcenter-row {
+        display:table;
+    }
+    .vcenter {
+        display:table-cell;
+        vertical-align:middle;
+        float:none;
+    }
 }
