@@ -13,28 +13,40 @@
 
 get_header(); ?>
 
-	<?php if ( have_posts() ) : ?>
+<div class="row">
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+	<div class="col-xs-12 col-md-8">
+	
+		<?php if ( have_posts() ) : ?>
 
-			<?php
-				/* Include the Post-Format-specific template for the content.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-			?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php endwhile; ?>
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to overload this in a child theme then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
 
-		<?php _tk_content_nav( 'nav-below' ); ?>
+			<?php endwhile; ?>
 
-	<?php else : ?>
+			<?php _tk_content_nav( 'nav-below' ); ?>
 
-		<?php get_template_part( 'no-results', 'index' ); ?>
+		<?php else : ?>
 
-	<?php endif; ?>
+			<?php get_template_part( 'no-results', 'index' ); ?>
 
-<?php get_sidebar(); ?>
+		<?php endif; ?>
+
+	</div>
+	<div class="col-xs-12 col-md-3 col-md-offset-1">
+	
+		<?php get_sidebar("blog"); ?>
+		
+	</div>
+
+</div><!-- .row -->
+
 <?php get_footer(); ?>
