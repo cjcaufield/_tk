@@ -18,7 +18,6 @@
 		<div class="row">
 			<div class="site-footer-inner col-sm-12">
 				<div class="site-info textaligncenter">
-					<!-- ><?php do_action( '_tk_credits' ); ?> -->
 					Beta &copy; 2015 Secret Geometry, Inc.
 				</div><!-- close .site-info -->
 			</div>
