@@ -9,14 +9,27 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<script type="text/javascript">
+WebFontConfig = { fontdeck: { id: '59420' } };
+
+(function() {
+ var wf = document.createElement('script');
+ wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+ '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+ wf.type = 'text/javascript';
+ wf.async = 'true';
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(wf, s);
+ })();
+</script>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-<link href="http://fonts.googleapis.com/css?family=Lora:400,400italic" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="//f.fontdeck.com/s/css/KcLaLlaCyu5/i/Lbt7OOl/Iq8XI/www2.secretgeometry.com/59420.css" type="text/css" />
+<!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,400italic" rel="stylesheet" type="text/css"> -->
+<!-- <link rel="stylesheet" href="//f.fontdeck.com/s/css/KcLaLlaCyu5/i/Lbt7OOl/Iq8XI/www2.secretgeometry.com/59420.css" type="text/css" /> -->
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 

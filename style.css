@@ -17,13 +17,11 @@ body {
     background-color: #fff;
 	height: 100%; /* Sticky footer requires html and body to have no padding or margin. */
     font-size: 18px;
+    font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*font-family: 'Lato', Georgia, Times, serif;*/
-    font-family: "Apercu Bold", sans-serif; font-weight: bold; font-style: normal;
-    /*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
-    /*font-family: "Coquette Light", Helvetica, Arial, Verdana, sans-serif; font-size-adjust: 0.335; font-weight: 200; font-style: normal;*/
+    font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;
 }
 /*
 h1, h2, h3 {
@@ -35,20 +33,18 @@ h4, h5, h6 {
 }
 */
 /* Center the navbar items */
-
- @media (min-width: 768px) {
-     .navbar-nav {
-         float:none;
-         margin: 0 auto;
-         display: table;
-         table-layout: fixed;
-     }
- }
-
+/*
+@media (min-width: 768px) {
+    .navbar-nav {
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+*/
 div.navbar div, .dropdown-menu li a {
-    /*font-family: 'Lato', Georgia, Times, serif;*/
-    /*font-family: "Apercu Bold", sans-serif; font-weight: bold; font-style: normal;*/
-    font-family: "Apercu Light", sans-serif; font-style: normal;
+    font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
     font-size: 17px;
     text-transform: uppercase;
 }
@@ -58,7 +54,7 @@ div.navbar div, .dropdown-menu li a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
 }
 
 h4 {
@@ -67,13 +63,6 @@ h4 {
 
 .sidebar h4 {
     text-transform: uppercase;
-}
-
-p, div, blockquote, div.site-info {
-    /*font-family: 'Lora', Helvetica, Arial, sans-serif;
-    font-weight: 400;*/
-    font-family: "Apercu Light", sans-serif; font-style: normal;
-    font-weight: 200;
 }
 
 .main-content p, .main-content ul {
