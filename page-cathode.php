@@ -256,7 +256,7 @@ NEW ROW 1
 		</div>
 	</div>
 </div>
-<hr />
+<div class="spacer">&nbsp;</div>
 <!--
 
 NEW ROW 2
@@ -282,7 +282,7 @@ NEW ROW 2
 	  </div>
 	</div>
 </div>
-<hr />
+<div class="spacer">&nbsp;</div>
 <!--
 
 NEW ROW 3

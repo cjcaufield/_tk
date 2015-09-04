@@ -81,6 +81,8 @@ h4 {
   margin: 0 auto -60px;
   /* Pad bottom by footer height */
   padding: 0 0 60px;
+  /*background-color: #f3f3f3;*/
+  background-color: #eee;
 }
 
 .navbar {
@@ -130,6 +132,10 @@ body.home .jumbotron .container {
 
 .center-y {
 	vertical-align:middle;
+}
+
+.spacer {
+    margin-bottom: 10px;
 }
 
 /* Set the fixed height of the footer here */
@@ -268,7 +274,7 @@ object {
 }
 
 .feature-text {
-    background-color: #eee;
+    background-color: #fff;
     padding: 10px;
 }
 
