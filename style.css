@@ -42,11 +42,23 @@ h4, h5, h6 {
         table-layout: fixed;
     }
 }
+
 */
+
+div.navbar {
+	border-bottom-width: 0px;
+}
+
 div.navbar div, .dropdown-menu li a {
     font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
     font-size: 17px;
     text-transform: uppercase;
+	background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: #f6f6f6;
+	/*border-bottom: 2px #555 solid;*/
 }
 
 .dropdown-menu li a {
@@ -295,18 +307,26 @@ object {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3789c4', endColorstr='#69b3b3', GradientType=0 );
 }
 
+.contact-jumbotron {
+	/*background-image: url(/wp-content/uploads/rotary.jpg);*/
+	background-image: url(/wp-content/uploads/pinksky.jpg);
+	background-size: cover;
+	margin-bottom: 0px;
+}
+
 .navbar-brand {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sglogo {
     background: url(images/logo.png);
     background-size: cover;
-    width:48px;
-    height: 48px;
+    width:30px;
+    height: 30px;
     border: 0;
     border-style: none;
+	margin-right: 10px;
 }
 
 @media only screen and (min--moz-device-pixel-ratio: 2),
@@ -317,8 +337,8 @@ object {
     {
         background: url(images/logo2x.png);
         background-size: cover;
-        width:48px;
-        height: 48px;
+        width:30px;
+        height: 30px;
         border: 0;
         border-style: none;
     }
