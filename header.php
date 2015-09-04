@@ -9,9 +9,9 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Fontdeck javascript font loading. -->
 <script type="text/javascript">
 WebFontConfig = { fontdeck: { id: '59420' } };
-
 (function() {
  var wf = document.createElement('script');
  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -27,9 +27,6 @@ WebFontConfig = { fontdeck: { id: '59420' } };
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-
-<!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,400italic" rel="stylesheet" type="text/css"> -->
-<!-- <link rel="stylesheet" href="//f.fontdeck.com/s/css/KcLaLlaCyu5/i/Lbt7OOl/Iq8XI/www2.secretgeometry.com/59420.css" type="text/css" /> -->
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -50,7 +47,10 @@ WebFontConfig = { fontdeck: { id: '59420' } };
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><span class="glyphicon glyphicon-home"></span>&nbsp;</a>
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" border="0">
+                    <!-- <img src="/wp-content/uploads/Logo.png" /> -->
+                    <div class="sglogo">&nbsp;</div>
+                </a>
 			</div>
 			<!-- The WordPress Menu goes here -->
 			<?php wp_nav_menu(

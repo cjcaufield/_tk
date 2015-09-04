@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="jumbotron">
     <div class="text-center">
-        <a href="/apps/cathode"><img src="/wp-content/uploads/PinkSky.jpg" width="100%" border="0" /></a>
+        <a href="/apps/cathode"><img src="/wp-content/uploads/pinksky.jpg" width="100%" border="0" /></a>
     </div>
 </div>
 

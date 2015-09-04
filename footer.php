@@ -18,7 +18,7 @@
 		<div class="row">
 			<div class="site-footer-inner col-sm-12">
 				<div class="site-info textaligncenter">
-					Beta &copy; 2015 Secret Geometry, Inc.
+                    Beta &copy; 2015 Secret Geometry, Inc.
 				</div><!-- close .site-info -->
 			</div>
 		</div>
