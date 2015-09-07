@@ -1,1 +1,1 @@
-A modified version of the _tk theme.
+A modified version of the _tk Wordpress theme.
