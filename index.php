@@ -15,7 +15,13 @@ get_header(); ?>
 
 <div class="row">
 
-	<div class="col-xs-12 col-md-8">
+	<div class="col-xs-12 col-md-3">
+	
+		<?php get_sidebar("blog"); ?>
+		
+	</div>
+	
+	<div class="col-xs-12 col-md-9">
 	
 		<?php if ( have_posts() ) : ?>
 
@@ -40,11 +46,6 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-	</div>
-	<div class="col-xs-12 col-md-3 col-md-offset-1">
-	
-		<?php get_sidebar("blog"); ?>
-		
 	</div>
 
 </div><!-- .row -->

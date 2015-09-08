@@ -17,7 +17,45 @@ body {
     background-color: #fff;
 	height: 100%; /* Sticky footer requires html and body to have no padding or margin. */
     font-size: 18px;
-    font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
+	
+	/* Too sansy */
+    /*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
+	
+	/* Good but a little plain */
+	/*font-family:"Baskerville Regular", 'Times New Roman', Times, serif, serif; font-weight:normal; font-style:normal;*/
+	
+	/* */
+	/*font-family:"Goudy Old Style Regular", 'Times New Roman', Times, serif, serif; font-size-adjust:0.404; font-weight:normal; font-style:normal;*/
+	
+	/* Pretty but hard to read */
+	/*font-family:"Tanger Serif Wide Light", Cambria, Georgia, serif; font-size-adjust:0.49; font-weight:200; font-style:normal;*/
+	
+	/* Attractive but a little too angular */
+	font-family:"FM Light", Times, serif; font-weight:100; font-style:normal;
+	
+	/* Too round */
+	/*font-family:"Berlingske Serif Light", Georgia, serif; font-weight:200; font-style:normal;*/
+	
+	/* Cool but too goofy */
+	/*font-family:"Typewriter Regular", Georgia, 'Times New Roman', serif; font-weight:normal; font-style:normal;*/
+	
+	/* Very nice but too round */
+	/*font-family:"Museo Slab 100", Rockwell, Georgia, serif; font-weight:100; font-style:normal;*/
+	
+	/* Pretty nice */
+	/*font-family: 'Halant', serif; font-weight: 300;*/
+	
+	/* Good but too narrow */
+	/*font-family: 'Neuton', serif; font-weight: 300;*/
+	
+	/* OK but thickness is too variable */
+	/*font-family: 'Gilda Display', serif;*/
+	
+	/* Good but too square */
+	/*font-family: 'Mate', serif;*/
+	
+	/* */
+	/*font-family: 'Junge', serif;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,8 +80,18 @@ h4, h5, h6 {
         table-layout: fixed;
     }
 }
-
 */
+
+.container { padding: 0px 15px 0px 15px; } /* Override container padding from bootstrap-wp.css */
+
+.big-vertical-padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.jumbotron-white {
+	background-color: white;
+}
 
 div.navbar {
 	border-bottom-width: 0px;
@@ -58,25 +106,31 @@ div.navbar div, .dropdown-menu li a {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	background-color: #f6f6f6;
-	/*border-bottom: 2px #555 solid;*/
+	/*border-bottom: 1px #000 solid;*/
 }
+
+/*
+.navbar-nav a {
+	border-bottom: 1px #555 solid;
+}
+*/
 
 .dropdown-menu li a {
     text-align: left;
 }
-
+/*
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
-
+*/
 h4 {
 	margin-top: 20px;
 }
-
+/*
 .sidebar h4 {
     text-transform: uppercase;
 }
-
+*/
 .main-content p, .main-content ul {
 	font-size: 20px;
 }
@@ -128,7 +182,7 @@ body.home {
 	/*background-color: rgb(55, 55, 55);*/
 }
 
-body.home .jumbotron {
+.tight-jumbotron {
    height: 100%;
    padding: 0px;
    margin: 0px;
@@ -287,7 +341,27 @@ object {
 
 .feature-text {
     background-color: #fff;
-    padding: 10px;
+    padding: 0px;
+}
+
+.feature-head {
+	padding: 0px;
+}
+
+.feature-content {
+	padding: 0px 20px 10px 20px;
+}
+
+.feature-text ul, .feature-text li {
+	list-style: none;
+	padding-left: 0px;
+}
+
+article.post {
+	background-color: #fff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 30px;
 }
 
 /* Flat Black */
@@ -308,22 +382,22 @@ object {
 }
 
 .contact-jumbotron {
-	/*background-image: url(/wp-content/uploads/rotary.jpg);*/
-	background-image: url(/wp-content/uploads/pinksky.jpg);
+	background-image: url(/wp-content/uploads/rotary.jpg);
+	/*background-image: url(/wp-content/uploads/pinksky.jpg);*/
 	background-size: cover;
 	margin-bottom: 0px;
 }
 
 .navbar-brand {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .sglogo {
-    background: url(images/logo.png);
+    background: url(/wp-content/uploads/logowhole.png);
     background-size: cover;
-    width:30px;
-    height: 30px;
+    width:36px;
+    height: 36px;
     border: 0;
     border-style: none;
 	margin-right: 10px;
@@ -335,10 +409,10 @@ object {
 {
     .sglogo
     {
-        background: url(images/logo2x.png);
+        background: url(/wp-content/uploads/logowhole2x.png);
         background-size: cover;
-        width:30px;
-        height: 30px;
+        width:36px;
+        height: 36px;
         border: 0;
         border-style: none;
     }

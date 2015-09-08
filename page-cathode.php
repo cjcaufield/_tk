@@ -157,51 +157,59 @@ ROW 1
 		<h2>Tech Specs</h2>
 		<div class="row">
 			<div class="col-sm-3">
-				<div class="product-text">
-					<h3>Emulation</h3>
-					<ul class="product-list">
-						<li>256 Colors</li>
-						<li>Accurate Layout</li>
-						<li>Live Text Reflow</li>
-						<li>Scrollback Buffer</li>
-						<li>Unicode (single width)</li>
-					</ul>
+			  	<div class="feature-text">
+					<div class="feature-content">
+						<h3>Emulation</h3>
+						<ul class="product-list">
+							<li>256 Colors</li>
+							<li>Accurate Layout</li>
+							<li>Live Text Reflow</li>
+							<li>Scrollback Buffer</li>
+							<li>Unicode (single width)</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3">
-				<div class="product-text">
-					<h3>Workflow</h3>
-					<ul class="product-list">
-						<li>Server Bookmarks</li>
-						<li>Wireless Keyboards</li>
-						<li>Customizable Keys</li>
-						<li>Concurrent Sessions</li>
-						<li>Secure Data</li>
-					</ul>
+			  	<div class="feature-text">
+					<div class="feature-content">
+						<h3>Workflow</h3>
+						<ul class="product-list">
+							<li>Server Bookmarks</li>
+							<li>Wireless Keyboards</li>
+							<li>Customizable Keys</li>
+							<li>Concurrent Sessions</li>
+							<li>Secure Data</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3">
-				<div class="product-text">
-					<h3>Mobile</h3>
-					<ul class="product-list">
-						<li>Gestures</li>
-						<li>Portrait or Landscape</li>
-						<li>3G and Wifi</li>
-						<li>Auto-Detect Servers</li>
-						<li>Dynamic Connections</li>
-					</ul>
+			  	<div class="feature-text">
+					<div class="feature-content">
+						<h3>Mobile</h3>
+						<ul class="product-list">
+							<li>Gestures</li>
+							<li>Portrait or Landscape</li>
+							<li>3G and Wifi</li>
+							<li>Auto-Detect Servers</li>
+							<li>Dynamic Connections</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3">
-				<div class="product-text">
-					<h3>Desktop</h3>
-					<ul class="product-list">
-						<li>Drag and Drop Files</li>
-						<li>Mouse Copy/Paste</li>
-						<li>Command-Click URLs</li>
-						<li>Text Editor Mode</li>
-						<li>Text-Art Generator</li>
-					</ul>
+			  	<div class="feature-text">
+					<div class="feature-content">
+						<h3>Desktop</h3>
+						<ul class="product-list">
+							<li>Drag and Drop Files</li>
+							<li>Mouse Copy/Paste</li>
+							<li>Command-Click URLs</li>
+							<li>Text Editor Mode</li>
+							<li>Text-Art Generator</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -239,21 +247,36 @@ NEW ROW 1
 <div class="row feature-row">
 	<div class="col-sm-4">
 		<div class="feature-text">
-	      <h2>Fonts</h2>
-	      <p>Cathode includes a dozen classic bitmap fonts which look great on small screens.  Zoom in for blocky letters or zoom out for crisp text.</p>
+		  <div class="feature-head">
+			  <img src="/wp-content/uploads/squatters.jpg" />
+		  </div>
+		  <div class="feature-content">
+	        <h2>Fonts</h2>
+	        <p>Cathode includes a dozen classic bitmap fonts which look great on small screens.  Zoom in for blocky letters or zoom out for crisp text.</p>
+		  </div>
 	  </div>
 	</div>
 	<div class="col-sm-4">
 		<div class="feature-text">
-	      <h2>Retina</h2>
-	      <p>Designed from scratch to be resolution independent.  Text and effects take full advantage of all the extra pixels.</p>
+  		  <div class="feature-head">
+  			  <img src="/wp-content/uploads/squatters.jpg" />
+  		  </div>
+  		  <div class="feature-content">
+	      	<h2>Retina</h2>
+	      	<p>Designed from scratch to be resolution independent.  Text and effects take full advantage of all the extra pixels.</p>
 		</div>
+	  </div>
 	</div>
 	<div class="col-sm-4">
 		<div class="feature-text">
-	      <h2>Fullscreen</h2>
-	      <p>Hide clutter and completely immerse yourself.  Works great with multiple monitors and spaces.</p>
+  		  <div class="feature-head">
+  			  <img src="/wp-content/uploads/squatters.jpg" />
+  		  </div>
+  		  <div class="feature-content">
+	      	<h2>Fullscreen</h2>
+	      	<p>Hide clutter and completely immerse yourself.  Works great with multiple monitors and spaces.</p>
 		</div>
+	  </div>
 	</div>
 </div>
 <div class="spacer">&nbsp;</div>
@@ -265,54 +288,39 @@ NEW ROW 2
 <div class="row feature-row">
 	<div class="col-sm-4">
 		<div class="feature-text">
-	      <h2>Glass</h2>
-	      <p>Warp the screen like a 1970s bubble, or flatten it like a modern slate.  Rays project through the curve and reflect in the frame.</p>
+    		  <div class="feature-head">
+    			  <img src="/wp-content/uploads/desktopcsseditor.png" />
+    		  </div>
+    		  <div class="feature-content">
+				  <h2>Glass</h2>
+				  <p>Warp the screen like a 1970s bubble, or flatten it like a modern slate.  Rays project through the curve and reflect in the frame.</p>
+			  </div>
 		</div>
 	</div>
 	<div class="col-sm-4">
 		<div class="feature-text">
-	      <h2>Color</h2>
-	      <p>A full spectrum of 8-bit colors, plus overbright and glow controls.  The background can be fully lit, or completely darkened.</p>
+    		  <div class="feature-head">
+    			  <img src="/wp-content/uploads/desktopcsseditor.png" />
+    		  </div>
+    		  <div class="feature-content">
+	      		<h2>Color</h2>
+	      	  	<p>A full spectrum of 8-bit colors, plus overbright and glow controls.  The background can be fully lit, or completely darkened.</p>
+		  	</div>
 		</div>
 	</div>
 	<div class="col-sm-4">
 		<div class="feature-text">
-	      <h2>Filters</h2>
-	      <p>Create a lifelike, analog warmth by adding static, jitter, and flicker.  Turn the frame rate up to 60 fps for a hyper-real look.</p>
-	  </div>
+    		  <div class="feature-head">
+    			  <img src="/wp-content/uploads/desktopcsseditor.png" />
+    		  </div>
+    		  <div class="feature-content">
+			      <h2>Filters</h2>
+			      <p>Create a lifelike, analog warmth by adding static, jitter, and flicker.  Turn the frame rate up to 60 fps for a hyper-real look.</p>
+			  </div>
+	  	</div>
 	</div>
 </div>
 <div class="spacer">&nbsp;</div>
-<!--
-
-NEW ROW 3
-
--->
-<div class="row feature-row">
-	<div class="col-sm-4">
-		<div class="feature-text">
-	      <h2>Animation</h2>
-	      <p>Typing feels incredibly smooth as pixels slowly fade away.  Ray tubes bounce as you scroll, and light moves with your orientation.</p>
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="feature-text">
-	      <h2>Sound</h2>
-	      <p>A variety of beeps, clicks, and pops accentuate your interactions.  Fully customizable and simple to turn on or off.</p>
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="feature-text">
-	      <h2>Mac Extras</h2>
-	      <p>Use as a simple text editor or text-art generator.  Works with any plain text files, images, or your webcam.</p>
-		</div>
-	</div>
-</div>
-<!--
-
-CUT ROW
-
--->
 <!--
    
 IMAGES
@@ -394,32 +402,44 @@ BOTTOM ROW
 
 -->
 <div class="row product-row">
-  <div class="col-sm-6">
-  	<div class="product-text">
-		<h3>Quotes</h3>
-		<blockquote>
-			<p>Cathode puts the sex back in terminal emulators.</p>
-			<small><a href="http://gizmodo.com/5742855/cathode-puts-the-sex-back-in-terminal-emulators">Gizmodo.com</a></small>
-		</blockquote>
-		<blockquote>
-			<p>Too fun to resist.</p>
-			<small><a href="http://www.techhive.com/article/217824/turn_your_new_mac_into_an_old_terminal_with_cathode.html">PC World</a></small>
-		</blockquote>
-		<blockquote>
-			<p>This is fantastic.</p>
-			<small><a href="http://www.jwz.org/blog/2011/01/cathode-vintage-terminal-emulator">JWZ.org</a></small>
-		</blockquote>
+  <div class="col-sm-4">
+  	<div class="feature-text">
+		<div class="feature-content">
+			<h3>Quotes</h3>
+			<blockquote>
+				<p>Cathode puts the sex back in terminal emulators.</p>
+				<small><a href="http://gizmodo.com/5742855/cathode-puts-the-sex-back-in-terminal-emulators">Gizmodo.com</a></small>
+			</blockquote>
+			<blockquote>
+				<p>Too fun to resist.</p>
+				<small><a href="http://www.techhive.com/article/217824/turn_your_new_mac_into_an_old_terminal_with_cathode.html">PC World</a></small>
+			</blockquote>
+			<blockquote>
+				<p>This is fantastic.</p>
+				<small><a href="http://www.jwz.org/blog/2011/01/cathode-vintage-terminal-emulator">JWZ.org</a></small>
+			</blockquote>
+		</div>
 	</div>
   </div>
-  <div class="col-sm-6">
-  	<div class="product-text">
-		<h3>Further Reading</h3>
-		<ul class="product-list">
-		  <li><a href="/apps/cathode/faq">Frequently Asked Questions</a></li>
-		  <li><a href="/apps/cathode/releasenotes">Mac Release Notes</a></li>
-          <li><a href="/apps/cathode/iosreleasenotes">iOS Release Notes</a></li>
-          <li><a href="/apps/cathode/downloads">Older Versions</a></li>
-		</ul>
+  <div class="col-sm-4">
+  	<div class="feature-text">
+		<div class="feature-content">
+			<h1>★★★★★</h1>
+			<p>4.7 / 5.0 on the App Store</p>
+		</div>
+	  </div>
+  </div>
+  <div class="col-sm-4">
+  	<div class="feature-text">
+		<div class="feature-content">
+			<h3>Further Reading</h3>
+			<ul class="product-list">
+			  <li><a href="/apps/cathode/faq">Frequently Asked Questions</a></li>
+			  <li><a href="/apps/cathode/releasenotes">Mac Release Notes</a></li>
+	          <li><a href="/apps/cathode/iosreleasenotes">iOS Release Notes</a></li>
+	          <li><a href="/apps/cathode/downloads">Older Versions</a></li>
+			</ul>
+		</div>
 	  </div>
   </div>
 </div>

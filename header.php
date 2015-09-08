@@ -9,18 +9,20 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Halant:300,400|Neuton:200,300|Gilda+Display|Mate|Junge' rel='stylesheet' type='text/css'>
 <!-- Fontdeck javascript font loading. -->
 <script type="text/javascript">
 WebFontConfig = { fontdeck: { id: '59420' } };
+
 (function() {
- var wf = document.createElement('script');
- wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
- '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
- wf.type = 'text/javascript';
- wf.async = 'true';
- var s = document.getElementsByTagName('script')[0];
- s.parentNode.insertBefore(wf, s);
- })();
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
 </script>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
