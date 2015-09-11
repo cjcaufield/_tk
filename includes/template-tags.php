@@ -190,11 +190,13 @@ function _tk_posted_on() {
 		esc_html( get_the_date() )
 	);
 
+	/*
 	$time_string = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		$time_string
 	);
+	*/
 	
 	printf( __( '<span class="posted-on">%1$s</span>', '_tk' ),
 		$time_string

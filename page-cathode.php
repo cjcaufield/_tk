@@ -6,21 +6,6 @@
 <?php get_header(); ?>
 <!--
 
-FACEBOOK
-
--->
-<div id="fb-root"></div>
-<script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-<!--
-
 Prevent FancyBox from showing popups on small screens.
 
 -->
@@ -47,76 +32,59 @@ CONTENT
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>Cathode</h1>
-				<h3 class="subheader">Vintage Terminal</h3>
-				<div class="macbookpro-wrapper">
-					<div class="macbookpro-innerwrapper">
-						<?php echo do_shortcode('[videojs ogg="http://s3.amazonaws.com/cjcaufield/media/Cathode2014Final.ogv" mp4="http://s3.amazonaws.com/cjcaufield/media/Cathode2014Final.mp4" poster="/media/Cathode2014Poster.jpg" width="100%" height="100%" id="movie-id" preload="auto" controls="true"][/videojs]'); ?>
+				<div class="textaligncenter">
+					<h1>Cathode</h1>
+					<h3 class="subheader">Vintage Terminal</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row action-row text-center">
+			<div class="col-sm-6">
+				<div class="action-div">
+					<h2>iOS</h2>
+					<div class="action-buttons">
+						<div class="store-badge">
+							<a href="https://itunes.apple.com/us/app/cathode/id656982811?ls=1&mt=8">
+								<img src="/wp-content/media/AppStoreBadge.svg" width="190px" height="45px" />
+							</a>
+						</div>
 					</div>
-					<img src="/media/MacBookPro.jpg" />
+					<p>Universal iOS 7 app.<br>Connects to any Mac or SSH server.</p>
+				</div>
+			</div>
+			<div class="col-sm-6" style="border-left: 1px solid #eee;">
+				<div class="action-div">
+					<h2>Mac</h2>
+						<div class="action-buttons">
+							<div class="store-badge">
+								<!-- Replace with http://www.appstore.com/mac/cathode ? -->
+								<a href="https://itunes.apple.com/us/app/cathode/id499233976?mt=12&uo=4" target="itunes_store">
+									<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
+								</a>
+							</div>
+						</div>
+						<div class="action-buttons">
+							<p>Runs on any 2008+ Mac with OS X 10.7+.</p>
+							<div class="store-badge">
+								<a href="http://store.secretgeometry.com/download.php?id=7" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span><span class="btn-label">Download Demo</span></a>
+							</div>
+							<div class="store-badge">
+		                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		                            <input type="hidden" name="cmd" value="_s-xclick">
+		                            <input type="hidden" name="hosted_button_id" value="9X5HYCUX8PGJC">
+		                            <button type="submit" class="btn btn-success btn-block">
+		                                <span class="glyphicon glyphicon-gift"></span><span class="btn-label">Purchase Direct</span>
+		                            </button>
+		                        </form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="container"><!-- begin new outer container -->
-<!--
-   
-BUTTON ROW
-   
--->
-<div class="row action-row text-center">
-	<div class="col-sm-6">
-		<div class="sticker-wrapper">
-			&nbsp;
-			<div class="sticker"></div>
-		</div>
-		<div class="action-div">
-			<h2>iOS</h2>
-			<div class="action-buttons">
-				<div class="store-badge">
-					<a href="https://itunes.apple.com/us/app/cathode/id656982811?ls=1&mt=8">
-						<img src="/images/AppStoreBadge.svg" width="190px" height="45px" />
-					</a>
-				</div>
-			</div>
-			<p>Universal iOS 7 app.<br>Connects to any Mac or SSH server.</p>
-			<div class="facebook-wrapper">
-				<div class="fb-like" data-href="http://www.facebook.com/CathodeApp" data-send="false" data-layout="box_count" data-show-faces="false" data-width="250">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6" style="border-left: 1px solid #eee;">
-		<div class="action-div">
-			<h2>Mac</h2>
-				<div class="action-buttons">
-					<div class="store-badge">
-						<!-- Replace with http://www.appstore.com/mac/cathode ? -->
-						<a href="https://itunes.apple.com/us/app/cathode/id499233976?mt=12&uo=4" target="itunes_store">
-							<img src="/images/MacAppStoreBadge.svg" width="230px" height="45px" />
-						</a>
-					</div>
-				</div>
-				<div class="action-buttons">
-					<p>Runs on any 2008+ Mac with OS X 10.7+.</p>
-					<div class="store-badge">
-						<a href="http://store.secretgeometry.com/download.php?id=7" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span><span class="btn-label">Download Demo</span></a>
-					</div>
-					<div class="store-badge">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="9X5HYCUX8PGJC">
-                            <button type="submit" class="btn btn-success btn-block">
-                                <span class="glyphicon glyphicon-gift"></span><span class="btn-label">Purchase Direct</span>
-                            </button>
-                        </form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 <!--
    
 ROW A
@@ -128,7 +96,7 @@ ROW A
 		<div class="row product-row product-banner vcenter-row-sm">
 			<div class="col-sm-6 vcenter-sm">
 				<div class="jumbo-section">
-					<img src="/media/iPhone5cCathodeFlatOptimized.png" />
+					<img src="/wp-content/uploads/iPhone5cCathodeFlatOptimized.png" />
 				</div>
 			</div>
 			<div class="col-sm-6 vcenter-sm">
@@ -154,7 +122,6 @@ ROW 1
 -->
 <div class="row feature-row">
 	<div class="col-md-12">
-		<h2>Tech Specs</h2>
 		<div class="row">
 			<div class="col-sm-3">
 			  	<div class="feature-text">
@@ -215,6 +182,7 @@ ROW 1
 		</div>
 	</div>
 </div>
+<div class="spacer">&nbsp;</div>
 <!--
    
 ROW B
@@ -443,6 +411,7 @@ BOTTOM ROW
 	  </div>
   </div>
 </div>
+<div class="spacer">&nbsp;</div>
 <!--
  
  FOOTER

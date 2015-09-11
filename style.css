@@ -56,6 +56,16 @@ body {
 	
 	/* */
 	/*font-family: 'Junge', serif;*/
+	
+	/*
+	Calluna
+	jaf-bernino-sans
+	freight-text-pro (body)
+	Fenice ITC W01 Bold
+	Amatic
+	Apercu Bold
+	Raleway (caps)
+	*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -126,18 +136,28 @@ h1, h2, h3, h4, h5, h6 {
 h4 {
 	margin-top: 20px;
 }
-/*
-.sidebar h4 {
-    text-transform: uppercase;
+
+.sidebar h4 /*, .entry-meta*/ {
+    /*text-transform: uppercase;*/
 }
-*/
+
 .main-content p, .main-content ul {
 	font-size: 20px;
 }
 
 .sidebar p, .sidebar ul {
+	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
 	font-size: 17px;
-}	
+}
+
+.sidebar li {
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+
+.sidebar li a {
+	color: #555;
+}
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -174,8 +194,8 @@ aside ul li {
 	margin: 0px;
 }
 
-.sidebar-padder {
-	margin-top: 40px;
+.sidebar aside {
+	margin-bottom: 20px;
 }
 
 body.home {
@@ -196,6 +216,26 @@ body.home .jumbotron .container {
    	height: 100%;
 }
 
+.entry-meta {
+	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
+	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
+	color: #bbb;
+}
+
+.page-title {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+article .page-title {
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.page-title a {
+	color: #333;
+}
+
 .center-y {
 	vertical-align:middle;
 }
@@ -208,6 +248,7 @@ body.home .jumbotron .container {
 .site-footer {
   height: 60px;
   background-color: #fff;
+  font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
 }
 
 .footer-spacer {
@@ -349,7 +390,8 @@ object {
 }
 
 .feature-content {
-	padding: 0px 20px 10px 20px;
+	/*margin-top: 20px;*/
+	padding: 5px 20px 10px 20px;
 }
 
 .feature-text ul, .feature-text li {
@@ -362,6 +404,23 @@ article.post {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 30px;
+}
+
+.sidebar {
+	background-color: #fff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 30px;
+}
+
+.sidebar h4 {
+	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
+	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
+	color: #bbb;
+	margin-top: 0px;
+	line-height: 1.428571429;
+	/*border-bottom: solid 1px #ddd;*/
+	text-transform: uppercase;
 }
 
 /* Flat Black */
@@ -381,11 +440,27 @@ article.post {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3789c4', endColorstr='#69b3b3', GradientType=0 );
 }
 
-.contact-jumbotron {
-	background-image: url(/wp-content/uploads/rotary.jpg);
-	/*background-image: url(/wp-content/uploads/pinksky.jpg);*/
+.cathode-jumbotron {
+	background-image: url(/wp-content/uploads/desktopcsseditor.png);
 	background-size: cover;
 	margin-bottom: 0px;
+	color: white;
+}
+
+.contact-jumbotron {
+	/*background-image: url(/wp-content/uploads/rotarylight.jpg);
+	background-size: cover;
+	margin-bottom: 0px;*/
+}
+
+.page-id-45 #wrap {
+	background-image: url(/wp-content/uploads/rotarylight.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.page-id-45 .jumbotron {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar-brand {
