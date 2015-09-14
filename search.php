@@ -7,6 +7,10 @@
 
 get_header(); ?>
 
+<div class="row">
+	
+	<div class="col-xs-12 col-md-9">
+		
 	<?php if ( have_posts() ) : ?>
 
 		<header>
@@ -27,6 +31,13 @@ get_header(); ?>
 		<?php get_template_part( 'no-results', 'search' ); ?>
 
 	<?php endif; // end of loop. ?>
+	
+	</div>
+	<div class="col-xs-12 col-md-3">
 
-<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
+			
+	</div>
+</div>
+
 <?php get_footer(); ?>
