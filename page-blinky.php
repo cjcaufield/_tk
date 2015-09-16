@@ -10,34 +10,33 @@ BEGIN CONTENT
 
 -->
 </div><!-- end outer container -->
-<div class="jumbotron blinky-jumbotron">
+<div class="jumbotron blinky-jumbotron jumbotron-black">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-xs-12 col-md-3">
 				<h1>Blinky</h1>
 				<h3 class="subheader">Retro Text Editor</h3>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--
-
-BUTTON ROW
-
--->
-<div class="jumbotron blinky-button-jumbo">
-	<div class="container">
-		<div class="row product-row">
-			<div class="col-md-12">
+				<div class="spacer30"></div>
 				<div class="store-badge">
 					<a href="http://itunes.apple.com/us/app/blinky/id550873221">
 						<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
 					</a>
 				</div>
-				<div class="facebook-wrapper">
-					<div class="fb-like" data-href="//www.facebook.com/BlinkyTextEditor" data-send="false" data-layout="box_count" data-show-faces="false" data-width="250"></div>
-				</div>
+				<div class="spacer30"></div>
+			</div>
+			<div class="col-xs-12 col-md-9">
+				<img src="/wp-content/uploads/macbookair.png" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jumbotron big-vertical-padding jumbotron-white home-page-logo-jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div class="spacer40"></div>
+				<p class="big-text">A circle is a simple <a title="Shape" href="https://en.wikipedia.org/wiki/Shape">shape</a> in <a title="Euclidean geometry" href="https://en.wikipedia.org/wiki/Euclidean_geometry">Euclidean geometry</a>. It is the set of all <a title="Point (geometry)" href="https://en.wikipedia.org/wiki/Point_(geometry)">points</a> in a <a class="mw-redirect" title="Plane (mathematics)" href="https://en.wikipedia.org/wiki/Plane_(mathematics)">plane</a> that are at a given distance from a given point, the <a title="Centre (geometry)" href="https://en.wikipedia.org/wiki/Centre_(geometry)">centre</a>; equivalently it is the curve traced out by a point that moves so that its distance from a given point is constant. The distance between any of the points and the centre is called the <a title="Radius" href="https://en.wikipedia.org/wiki/Radius">radius</a>.</p>
+				<div class="spacer30"></div>
 			</div>
 		</div>
 	</div>

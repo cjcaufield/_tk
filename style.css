@@ -97,6 +97,11 @@ p a, .contact-jumbotron a {
 	background-color: white;
 }
 
+.jumbotron-black {
+	background-color: black;
+	color: white;
+}
+
 .container-white {
 	background-color: white;
 }
@@ -203,6 +208,10 @@ body.home {
 	/*background-color: rgb(55, 55, 55);*/
 }
 
+.blinky-jumbotron {
+	margin-bottom: 0px;
+}
+
 .tight-jumbotron {
    height: 100%;
    padding: 0px;
@@ -253,8 +262,17 @@ article .page-title {
     margin-bottom: 30px;
 }
 
+.spacer40 {
+    margin-bottom: 40px;
+}
+
 .spacer50 {
     margin-bottom: 50px;
+}
+
+p.big-text {
+	font-size: 24px;
+	text-align: justify;
 }
 
 /* Set the fixed height of the footer here */
