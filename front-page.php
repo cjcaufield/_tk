@@ -14,25 +14,19 @@ get_header(); ?>
 
 </div><!-- end outer container -->
 
-<div class="jumbotron tight-jumbotron">
+<div class="jumbotron tight-jumbotron home-page-image-jumbotron">
     <div class="text-center">
         <a href="/apps/cathode">
-			<!-- ><img src="/wp-content/uploads/pinksky.jpg" width="100%" border="0" /> -->
-			<!-- ><img src="/wp-content/uploads/squatters.jpg" width="100%" border="0" /> -->
 			<img src="/wp-content/uploads/squattersreversed.jpg" width="100%" border="0" />
 		</a>
     </div>
 </div>
-<!--
-<div class="container container-big-padding container-white">
+<div class="jumbotron big-vertical-padding jumbotron-white home-page-logo-jumbotron">
 	<div class="text-center">
-		<h1>Some really big text.</h1>
-	</div>
-</div>
--->
-<div class="jumbotron big-vertical-padding jumbotron-white">
-	<div class="text-center">
-		<h1>Some really big text.</h1>
+		<div class="home-page-logo-div">
+			<div class="sgbiglogo"></div>
+			<h1>Some really big text.</h1>
+		</div>
 	</div>
 </div>
 <div class="jumbotron big-vertical-padding">

@@ -103,6 +103,10 @@ h4, h5, h6 {
 	background-color: white;
 }
 
+.container-white {
+	background-color: white;
+}
+
 div.navbar {
 	border-bottom-width: 0px;
 }
@@ -469,8 +473,16 @@ article.post {
     padding-bottom: 7px;
 }
 
+.home-page-image-jumbotron {
+	overflow: visible;
+}
+
+.home-page-logo-jumbotron {
+	overflow: visible;
+}
+
 .sglogo {
-    background: url(/wp-content/uploads/logowhole.png);
+    background: url(/wp-content/uploads/gem2logo.png);
     background-size: cover;
     width:36px;
     height: 36px;
@@ -479,16 +491,66 @@ article.post {
 	margin-right: 10px;
 }
 
+/*
+.sgbiglogo-wrapper {
+    position: absolute;
+	left: 50%;
+	background-color: red;
+}
+*/
+
+.home-page-logo-div {
+	position: relative;
+	top: -158px;
+	/*bottom: -158px;*/
+}
+
+.sgbiglogo {
+	/*
+	position: relative;
+	top: -158px;
+	*/
+    background: url(/wp-content/uploads/gem2logo256.png);
+    background-size: cover;
+    width: 256px;
+    height: 256px;
+	
+    border: 0;
+    border-style: none;
+	/*margin-top: -158px;*/ /* half height (128) + margin above (30) */
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	/*
+	clip: auto;
+	overflow: visible;
+	background-clip: content-box;
+	position: absolute;
+	position: fixed;
+	*/
+}
+
 @media only screen and (min--moz-device-pixel-ratio: 2),
        only screen and (-webkit-min-device-pixel-ratio: 2),
        only screen and (min-device-pixel-ratio: 2)
 {
     .sglogo
     {
-        background: url(/wp-content/uploads/logowhole2x.png);
+        background: url(/wp-content/uploads/gem2logo2x.png);
         background-size: cover;
         width:36px;
         height: 36px;
+        border: 0;
+        border-style: none;
+    }
+	
+    .sgbiglogo
+    {
+        background: url(/wp-content/uploads/gem2logo2562x.png);
+        background-size: cover;
+        width: 256px;
+        height: 256px;
         border: 0;
         border-style: none;
     }
