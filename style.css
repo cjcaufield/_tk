@@ -470,6 +470,11 @@ article.post {
 	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
 }
 
+.contact-jumbotron a {
+	/*text-decoration: underline;*/
+	/*background-color: rgba(0, 127, 255, 0.1);*/
+}
+
 .page-id-45 #wrap {
 	background-image: url(/wp-content/uploads/rotarylight.jpg);
 	background-size: 100% auto;
@@ -526,46 +531,23 @@ article.post {
 }
 
 .home-page-logo-outer-div {
-	margin-bottom: -158px;
+	margin-bottom: -132px;
 }
 
 .home-page-logo-div {
 	position: relative;
-	top: -158px;
+	top: -132px;
 }
-
-/*
-.sgbiglogo-wrapper {
-    position: absolute;
-	left: 50%;
-	background-color: red;
-}
-*/
 
 .sgbiglogo {
-	/*
-	position: relative;
-	top: -158px;
-	*/
-    background: url(/wp-content/uploads/gem2logo256.png);
+    background: url(/wp-content/uploads/gem2logo192.png);
     background-size: cover;
-    width: 256px;
-    height: 256px;
-	
+    width: 192px;
+    height: 192px;
     border: 0;
     border-style: none;
-	/*margin-top: -158px;*/ /* half height (128) + margin above (30) */
-	
 	margin-left: auto;
 	margin-right: auto;
-	
-	/*
-	clip: auto;
-	overflow: visible;
-	background-clip: content-box;
-	position: absolute;
-	position: fixed;
-	*/
 }
 
 @media only screen and (min--moz-device-pixel-ratio: 2),
@@ -584,10 +566,10 @@ article.post {
 	
     .sgbiglogo
     {
-        background: url(/wp-content/uploads/gem2logo2562x.png);
+        background: url(/wp-content/uploads/gem2logo1922x.png);
         background-size: cover;
-        width: 256px;
-        height: 256px;
+        width: 192px;
+        height: 192px;
         border: 0;
         border-style: none;
     }
