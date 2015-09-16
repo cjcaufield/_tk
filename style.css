@@ -71,24 +71,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;
 }
-/*
-h1, h2, h3 {
-    font-weight: 900;
+
+a {
+	color: rgb(0, 127, 255);
 }
 
-h4, h5, h6 {
-    font-weight: 400;
+a:hover {
+	color: rgb(0, 127, 255);
 }
-*/
-/* Center the navbar items */
+
 /*
-@media (min-width: 768px) {
-    .navbar-nav {
-        float:none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-    }
+p a, .contact-jumbotron a {
+	background-color: rgba(0, 127, 255, 0.05);	
 }
 */
 
@@ -174,6 +168,8 @@ h4 {
   padding: 0 0 60px;
   /*background-color: #f3f3f3;*/
   background-color: #eee;
+  
+  /*background-image: url(http://hiphopdx.com/_/i/hash.gif)*/
 }
 
 .navbar {
@@ -247,6 +243,18 @@ article .page-title {
 
 .spacer {
     margin-bottom: 10px;
+}
+
+.spacer20 {
+    margin-bottom: 20px;
+}
+
+.spacer30 {
+    margin-bottom: 30px;
+}
+
+.spacer50 {
+    margin-bottom: 50px;
 }
 
 /* Set the fixed height of the footer here */
@@ -458,6 +466,10 @@ article.post {
 	margin-bottom: 0px;*/
 }
 
+.contact-jumbotron h3 {
+	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
+}
+
 .page-id-45 #wrap {
 	background-image: url(/wp-content/uploads/rotarylight.jpg);
 	background-size: 100% auto;
@@ -473,14 +485,6 @@ article.post {
     padding-bottom: 7px;
 }
 
-.home-page-image-jumbotron {
-	overflow: visible;
-}
-
-.home-page-logo-jumbotron {
-	overflow: visible;
-}
-
 .sglogo {
     background: url(/wp-content/uploads/gem2logo.png);
     background-size: cover;
@@ -491,6 +495,45 @@ article.post {
 	margin-right: 10px;
 }
 
+.home-page-image-jumbotron {
+	overflow: visible;
+}
+
+.home-page-logo-jumbotron {
+	overflow: visible;
+	/*margin-bottom: -158px;*/
+}
+
+.home-page-image-div {
+	display: inline-block;
+	position: relative;  
+}
+
+.home-page-image-div img {
+	display: block;
+	max-width:100%;
+}
+
+.home-page-image-overlay {
+	padding-top: 25%;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.3);
+	color:white;
+}
+
+.home-page-logo-outer-div {
+	margin-bottom: -158px;
+}
+
+.home-page-logo-div {
+	position: relative;
+	top: -158px;
+}
+
 /*
 .sgbiglogo-wrapper {
     position: absolute;
@@ -498,12 +541,6 @@ article.post {
 	background-color: red;
 }
 */
-
-.home-page-logo-div {
-	position: relative;
-	top: -158px;
-	/*bottom: -158px;*/
-}
 
 .sgbiglogo {
 	/*
