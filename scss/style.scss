@@ -1,0 +1,702 @@
+// Import the necessary TK Bootstrap WP CSS additions.
+@import url( includes/css/bootstrap-wp.css );
+
+//
+// Some possible fonts.
+//
+
+/* Too sansy */
+/*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
+
+/* Good but a little plain */
+/*font-family:"Baskerville Regular", 'Times New Roman', Times, serif, serif; font-weight:normal; font-style:normal;*/
+
+/* */
+/*font-family:"Goudy Old Style Regular", 'Times New Roman', Times, serif, serif; font-size-adjust:0.404; font-weight:normal; font-style:normal;*/
+
+/* Pretty but hard to read */
+/*font-family:"Tanger Serif Wide Light", Cambria, Georgia, serif; font-size-adjust:0.49; font-weight:200; font-style:normal;*/
+
+/* Attractive but a little too angular */
+/*font-family:"FM Light", Times, serif; font-weight:100; font-style:normal;*/
+
+/* Too round */
+/*font-family:"Berlingske Serif Light", Georgia, serif; font-weight:200; font-style:normal;*/
+
+/* Cool but too goofy */
+/*font-family:"Typewriter Regular", Georgia, 'Times New Roman', serif; font-weight:normal; font-style:normal;*/
+
+/* Very nice but too round */
+/*font-family:"Museo Slab 100", Rockwell, Georgia, serif; font-weight:100; font-style:normal;*/
+
+/* Pretty nice */
+/*font-family: 'Halant', serif; font-weight: 300;*/
+
+/* Good but too narrow */
+/*font-family: 'Neuton', serif; font-weight: 300;*/
+
+/* OK but thickness is too variable */
+/*font-family: 'Gilda Display', serif;*/
+
+/* Good but too square */
+/*font-family: 'Mate', serif;*/
+
+/* */
+/*font-family: 'Junge', serif;*/
+
+//
+// Some more possible fonts.
+//
+
+/*
+Calluna
+jaf-bernino-sans
+freight-text-pro (body)
+Fenice ITC W01 Bold
+Amatic
+Apercu Bold
+Raleway (caps)
+Source Sans Pro
+*/
+
+//
+// Fonts
+//
+
+.thick-heading-font {
+	font-family: "Apercu Bold", Calibri, Roboto, sans-serif;
+	font-size-adjust: 0.508;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.thin-heading-font {
+	font-family: "Apercu Light", Calibri, Roboto, sans-serif;
+	font-size-adjust: 0.508;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.body-font {
+	font-family: "FM Light", Times, serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+//
+// Colors
+//
+
+//
+// Tags
+//
+
+/* This is a small security for too long strings titles */
+body {
+    word-wrap: break-word;
+}
+
+html,
+body {
+	@extend .body-font;
+	font-size: 18px;
+    background-color: #fff;
+	height: 100%; /* Sticky footer requires html and body to have no padding or margin. */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@extend .thick-heading-font;
+}
+
+a, a:hover, a:hover, a:focus {
+	/*color: rgb(0, 127, 255);*/
+	color: rgb(0, 180, 140);
+}
+
+p a, a:hover {
+	background-color: rgb(235, 255, 245);
+}
+
+// Override container padding from bootstrap-wp.css.
+.container {
+	padding: 0px 15px 0px 15px;
+}
+
+.big-vertical-padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.jumbotron-white {
+	background-color: white;
+}
+
+.jumbotron-black {
+	background-color: black;
+	color: white;
+}
+
+.container-white {
+	background-color: white;
+}
+
+div.navbar {
+	border-bottom-width: 0px;
+}
+
+div.navbar div, .dropdown-menu li a {
+	@extend .thin-heading-font;
+    font-size: 18px;
+    text-transform: uppercase;
+	background-color: white;
+}
+
+.dropdown-menu li a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+	
+	/* Dark green text on very light green background. */
+	color: rgb(0, 160, 80);
+	background-color: rgb(235, 255, 245);
+}
+
+.navbar-default .navbar-nav > .current-menu-ancestor > a,
+.navbar-default .navbar-nav > .current-menu-ancestor > a:hover,
+.navbar-default .navbar-nav > .current-menu-ancestor > a:focus,
+.navbar-default .navbar-nav > .current_page_parent > a,
+.navbar-default .navbar-nav > .current_page_parent > a:hover,
+.navbar-default .navbar-nav > .current_page_parent > a:focus,
+.dropdown-menu > .active > a:hover {
+	
+	/* Dark green text on very light green background. */
+	color: rgb(0, 160, 80);
+	background-color: rgb(235, 255, 245);
+}
+
+.navbar-default .navbar-nav> .open > a,
+.navbar-default .navbar-nav> .open > a:hover,
+.navbar-default .navbar-nav> .open > a:focus {
+	
+	/* White text on dark green background. */
+	color: white;
+	background-color: rgb(0, 180, 140);
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(0, 180, 140) !important;
+	background-image: none !important;
+	color: white !important;
+}
+
+.dropdown-menu {
+	border-top: none;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-menu li a {
+    text-align: left;
+}
+
+h4 {
+	margin-top: 20px;
+}
+
+.main-content p, .main-content ul {
+	font-size: 20px;
+}
+
+.sidebar p, .sidebar ul {
+	@extend .thin-heading-font;
+	font-size: 17px;
+}
+
+.sidebar li {
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+
+.sidebar li a {
+	color: #555;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+  /*background-color: #f3f3f3;*/
+  background-color: #eee;
+  
+  /*background-image: url(http://hiphopdx.com/_/i/hash.gif)*/
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: #fff;
+}
+
+.widget-title {
+	color: #666;
+}
+
+aside ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+aside ul li {
+	list-style: none;
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+}
+
+.sidebar aside {
+	margin-bottom: 20px;
+}
+
+body.home {
+	/*background-color: rgb(55, 55, 55);*/
+}
+
+.blinky-jumbotron {
+	margin-bottom: 0px;
+}
+
+.tight-jumbotron {
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+}
+
+body.home .main-content {
+   	height: 100%;
+}
+
+body.home .jumbotron .container {
+   	height: 100%;
+}
+
+.entry-meta {
+	margin: 30px 0px 35px -30px;
+}
+
+.entry-meta .posted-on {
+	@extend .thin-heading-font;
+	color: white;
+	/*background-color: #bbb;*/
+	background-color: rgb(0, 180, 140);
+	padding: 2px 30px 2px 30px;
+}
+
+.page-title {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+article .page-title {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.page-title a {
+	color: #333; /* Avoid link color. */
+}
+
+.center-y {
+	vertical-align:middle;
+}
+
+.spacer {
+    margin-bottom: 10px;
+}
+
+.spacer20 {
+    margin-bottom: 20px;
+}
+
+.spacer30 {
+    margin-bottom: 30px;
+}
+
+.spacer40 {
+    margin-bottom: 40px;
+}
+
+.spacer50 {
+    margin-bottom: 50px;
+}
+
+p.big-text {
+	font-size: 24px;
+	text-align: justify;
+}
+
+/* Set the fixed height of the footer here */
+.site-footer {
+	@extend .thin-heading-font;
+	height: 60px;
+	background-color: #fff;
+}
+
+.footer-spacer {
+	margin-top: 10px;
+}
+
+.site-info {
+	font-size: 16px;
+	padding-top: 20px;
+	color: #777;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+.textaligncenter {
+	text-align: center;
+}
+
+/* Images and wp-captions should always fit and be responsive */
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+img[class*="wp-image-"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	max-width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+.wp-caption.aligncenter {
+	margin-bottom: 10px;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+}
+.wp-caption .wp-caption-text {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* WP Gallery */
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.gallery dd {
+	margin: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Content */
+.main-content-inner {
+	padding-bottom: 1.5em;
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+/* Clearing */
+.clear {
+	clear: both;
+}
+
+/* Here some needed widget styles 
+ * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
+.widget { margin-bottom: 2em; }
+.widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
+
+/* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line. 
+ * Note: you can change the whole appearance of the search_form() function in our searchform.php */
+.widget_search .search-form input[type="submit"] { display: none; }
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
+ * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
+.comment .children {
+	margin-left: 1.5em;
+}
+
+.question-heading {
+	margin-top: 50px;
+	border-bottom: 2px solid #666;
+}
+
+.question {
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	color: #333;
+	text-transform: none;
+}
+
+.feature-text {
+    background-color: #fff;
+    padding: 0px;
+}
+
+.feature-head {
+	padding: 0px;
+}
+
+.feature-content {
+	/*margin-top: 20px;*/
+	padding: 5px 20px 10px 20px;
+}
+
+.feature-text ul, .feature-text li {
+	list-style: none;
+	padding-left: 0px;
+}
+
+article.post {
+	background-color: #fff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 25px 30px 30px 30px;
+	/*border-top: 10px rgb(235, 255, 245) solid;*/
+	/*border-bottom: 10px rgb(235, 255, 245) solid;*/
+}
+
+.sidebar {
+	background-color: #fff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 35px 30px 10px 30px;
+	/*border-top: 10px rgb(235, 255, 245) solid;*/
+	/*border-bottom: 10px rgb(235, 255, 245) solid;*/
+}
+
+.navbar,
+.site-footer,
+article.post,
+.sidebar,
+.feature-text,
+.contact-jumbotron span
+ {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+}
+
+.sidebar h4 {
+	@extend .thick-heading-font;
+	color: #333;
+	margin-top: 0px;
+	line-height: 1.428571429;
+	/*border-bottom: solid 1px #ddd;*/
+	text-transform: uppercase;
+}
+
+/* Flat Black */
+.gradient-2 {
+	background-color: #000;
+}
+
+/* Blue-Teal */
+.gradient-9 {
+	background: rgba(55,137,196,1);
+	background: -moz-linear-gradient(top, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(55,137,196,1)), color-stop(100%, rgba(105,179,179,1)));
+	background: -webkit-linear-gradient(top, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
+	background: -o-linear-gradient(top, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
+	background: -ms-linear-gradient(top, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
+	background: linear-gradient(to bottom, rgba(55,137,196,1) 0%, rgba(105,179,179,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3789c4', endColorstr='#69b3b3', GradientType=0 );
+}
+
+.cathode-jumbotron {
+	background-image: url(/wp-content/uploads/desktopcsseditor.png);
+	background-size: cover;
+	margin-bottom: 0px;
+	color: white;
+}
+
+.contact-jumbotron h3 {
+	@extend .thin-heading-font;
+}
+
+.contact-jumbotron span {
+	background-color: rgba(255, 255, 255, 1.0);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.page-id-45 #wrap {
+	background-image: /*linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),*/ url(/wp-content/uploads/rotarylight.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+body.blog #wrap,
+body.archive #wrap,
+body.single #wrap {
+	background-color: rgb(238, 238, 238);
+	/*background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(7, 7, 7, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
+	/*background-image: linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
+	background-image: linear-gradient(rgba(238, 238, 238, 0.0), rgba(238, 238, 238, 1.0)), url(/wp-content/uploads/typing.jpg);
+	/*background-image: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.page-id-45 .jumbotron {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-brand {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.sglogo {
+    background: url(/wp-content/uploads/gem2logothick.png);
+    background-size: cover;
+    width:36px;
+    height: 36px;
+    border: 0;
+    border-style: none;
+	/*margin-right: 10px;*/
+}
+
+.home-page-image-jumbotron {
+	overflow: visible;
+}
+
+.home-page-logo-jumbotron {
+	overflow: visible;
+}
+
+.home-page-image-div {
+	display: inline-block;
+	position: relative;  
+}
+
+.home-page-image-div img {
+	display: block;
+	max-width:100%;
+}
+
+.home-page-image-overlay {
+	padding-top: 25%;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.3);
+	color:white;
+}
+
+.home-page-logo-outer-div {
+	margin-bottom: -132px;
+}
+
+.home-page-logo-div {
+	position: relative;
+	top: -132px;
+}
+
+.sgbiglogo {
+    background: url(/wp-content/uploads/gem2logo192.png);
+    background-size: cover;
+    width: 192px;
+    height: 192px;
+    border: 0;
+    border-style: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio: 2)
+{
+    .sglogo
+    {
+        background: url(/wp-content/uploads/gem2logothick2x.png);
+        background-size: cover;
+        width:36px;
+        height: 36px;
+        border: 0;
+        border-style: none;
+    }
+	
+    .sgbiglogo
+    {
+        background: url(/wp-content/uploads/gem2logo1922x.png);
+        background-size: cover;
+        width: 192px;
+        height: 192px;
+        border: 0;
+        border-style: none;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .vcenter-row-sm {
+        display:table;
+    }
+    .vcenter-sm {
+        display:table-cell;
+        vertical-align:middle;
+        float:none;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .vcenter-row {
+        display:table;
+    }
+    .vcenter {
+        display:table-cell;
+        vertical-align:middle;
+        float:none;
+    }
+}
