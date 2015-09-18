@@ -126,31 +126,25 @@ div.navbar div, .dropdown-menu li a {
 	background-color: white;
 }
 
-.dropdown-menu li a:hover {
-    background-color: rgb(0, 180, 140) !important;
-	background-image: none !important;
-	color: white;
-}
-
-.dropdown-menu {
-	border-top: none;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-}
-
-/*
-.navbar-default .navbar-nav > .current-menu-ancestor > a {
-	color: green;
-	background-color: red;
-}
-*/
-
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
+	
+	/* Dark green text on very light green background. */
+	color: rgb(0, 160, 80);
+	background-color: rgb(235, 255, 245);
+}
+
+.navbar-default .navbar-nav > .current-menu-ancestor > a,
+.navbar-default .navbar-nav > .current-menu-ancestor > a:hover,
+.navbar-default .navbar-nav > .current-menu-ancestor > a:focus,
+.navbar-default .navbar-nav > .current_page_parent > a,
+.navbar-default .navbar-nav > .current_page_parent > a:hover,
+.navbar-default .navbar-nav > .current_page_parent > a:focus,
+.dropdown-menu > .active > a:hover {
 	
 	/* Dark green text on very light green background. */
 	color: rgb(0, 160, 80);
@@ -166,16 +160,15 @@ div.navbar div, .dropdown-menu li a {
 	background-color: rgb(0, 180, 140);
 }
 
-.navbar-default .navbar-nav > .current-menu-ancestor > a,
-.navbar-default .navbar-nav > .current-menu-ancestor > a:hover,
-.navbar-default .navbar-nav > .current-menu-ancestor > a:focus,
-.navbar-default .navbar-nav > .current_page_parent > a,
-.navbar-default .navbar-nav > .current_page_parent > a:hover,
-.navbar-default .navbar-nav > .current_page_parent > a:focus {
-	
-	/* Dark green text on very light green background. */
-	color: rgb(0, 160, 80);
-	background-color: rgb(235, 255, 245);
+.dropdown-menu li a:hover {
+    background-color: rgb(0, 180, 140) !important;
+	background-image: none !important;
+	color: white !important;
+}
+
+.dropdown-menu {
+	border-top: none;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -278,14 +271,15 @@ body.home .jumbotron .container {
 }
 
 .entry-meta {
-	margin: 0px 0px 20px -30px;
+	margin: 30px 0px 35px -30px;
 }
 
 .entry-meta .posted-on {
 	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
 	font-family: "Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
 	color: white;
-	background-color: #bbb;
+	/*background-color: #bbb;*/
+	background-color: rgb(0, 180, 140);
 	padding: 2px 30px 2px 30px;
 }
 

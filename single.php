@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
-
 <div class="row">
 	<div class="col-xs-12 col-md-9">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -17,5 +16,4 @@ get_header(); ?>
 		<?php get_sidebar("blog"); ?>
 	</div>
 </div>
-
 <?php get_footer(); ?>
