@@ -25,13 +25,13 @@ get_header(); ?>
 					<div class="feature-text">
 						<div class="feature-content">
 					-->
-							<h1><a href="">Email us</a> for support.</h1>
-							<h3>FAQs:  <a href="">Cathode</a>, <a href="">Blinky</a></h3>
+							<h1><span><a href="">Email us</a> for support.</span></h1>
+							<h3><span>FAQs:  <a href="">Cathode</a>, <a href="">Blinky</a></span></h3>
 							<div class="spacer50"></div>
-							<h2>We're also on <a href="">Twitter</a> and <a href="">Facebook</a>.</h2>
-							<h3>Pages: <a href="">Cathode</a>, <a href="">Blinky</a></h3>
+							<h2><span>We're also on <a href="">Twitter</a> and <a href="">Facebook</a>.</span></h2>
+							<h3><span>Pages: <a href="">Cathode</a>, <a href="">Blinky</a></span></h3>
 							<div class="spacer50"></div>
-							<h2>Public code is on <a href="">Github</a>.</h2>
+							<h2><span>Public code is on <a href="">Github</a>.</span></h2>
 							<!--
 							<h3>Social</h3>
 							<p>Twitter:<br />

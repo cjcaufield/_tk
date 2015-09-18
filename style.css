@@ -72,12 +72,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;
 }
 
-a {
-	color: rgb(0, 127, 255);
+a, a:hover, a:hover, a:focus {
+	/*color: rgb(0, 127, 255);*/
+	color: rgb(0, 180, 140);
 }
 
-a:hover {
-	color: rgb(0, 127, 255);
+p a, p a:hover, p a:focus {
+	background-color: rgb(235, 255, 245);
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
 /*
@@ -113,14 +116,31 @@ div.navbar {
 div.navbar div, .dropdown-menu li a {
 	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
     font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
-    font-size: 17px;
+    font-size: 18px;
     text-transform: uppercase;
 	background-color: white;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	background-color: #f6f6f6;
-	/*border-bottom: 1px #000 solid;*/
+	/*background-color: #fafafa;*/
+	/*border-bottom: 3px #333 solid;*/
+	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
+	
+	/*
+	background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1.0)
+    ),
+	url(http://hiphopdx.com/_/i/hash.gif);
+	*/
+	/*
+	background-image: linear-gradient(
+		#eee, white
+    );
+	*/
+	
+	color: rgb(0, 180, 90);
+	background-color: rgb(235, 255, 245);
 }
 
 /*
@@ -229,7 +249,7 @@ body.home .jumbotron .container {
 .entry-meta {
 	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
 	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
-	color: #bbb;
+	color: #999;
 }
 
 .page-title {
@@ -243,7 +263,7 @@ article .page-title {
 }
 
 .page-title a {
-	color: #333;
+	color: #333; /* Avoid link color. */
 }
 
 .center-y {
@@ -414,6 +434,7 @@ object {
 .feature-text {
     background-color: #fff;
     padding: 0px;
+	/*box-shadow: 0px 0px 3px #ddd;*/
 }
 
 .feature-head {
@@ -435,6 +456,7 @@ article.post {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 30px;
+	/*box-shadow: 0px 0px 3px #ddd;*/
 }
 
 .sidebar {
@@ -442,12 +464,13 @@ article.post {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 30px;
+	/*box-shadow: 0px 0px 3px #ddd;*/
 }
 
 .sidebar h4 {
-	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
-	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
-	color: #bbb;
+	font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;
+	/*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
+	color: #999;
 	margin-top: 0px;
 	line-height: 1.428571429;
 	/*border-bottom: solid 1px #ddd;*/
@@ -490,7 +513,19 @@ article.post {
 
 .contact-jumbotron a {
 	/*text-decoration: underline;*/
-	/*background-color: rgba(0, 127, 255, 0.1);*/
+	/*color: #333;*/
+	/*
+	color: rgb(0, 127, 255);
+	background-color: rgba(255, 255, 255, 0.8);
+	padding-left: 5px;
+	padding-right: 5px;
+	*/
+}
+
+.contact-jumbotron span {
+	background-color: rgba(255, 255, 255, 1.0);
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .page-id-45 #wrap {
@@ -509,13 +544,13 @@ article.post {
 }
 
 .sglogo {
-    background: url(/wp-content/uploads/gem2logo.png);
+    background: url(/wp-content/uploads/gem2logothick.png);
     background-size: cover;
     width:36px;
     height: 36px;
     border: 0;
     border-style: none;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 }
 
 .home-page-image-jumbotron {
@@ -524,7 +559,6 @@ article.post {
 
 .home-page-logo-jumbotron {
 	overflow: visible;
-	/*margin-bottom: -158px;*/
 }
 
 .home-page-image-div {
@@ -574,7 +608,7 @@ article.post {
 {
     .sglogo
     {
-        background: url(/wp-content/uploads/gem2logo2x.png);
+        background: url(/wp-content/uploads/gem2logothick2x.png);
         background-size: cover;
         width:36px;
         height: 36px;
