@@ -25,7 +25,7 @@ get_header(); ?>
 					<div class="feature-text">
 						<div class="feature-content">
 					-->
-							<h1><span><a href="">Email us</a> for support.</span></h1>
+							<h1><span><a href="">Email</a> us for support.</span></h1>
 							<h3><span>FAQs:  <a href="">Cathode</a>, <a href="">Blinky</a></span></h3>
 							<div class="spacer50"></div>
 							<h2><span>We're also on <a href="">Twitter</a> and <a href="">Facebook</a>.</span></h2>

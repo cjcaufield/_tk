@@ -77,10 +77,15 @@ a, a:hover, a:hover, a:focus {
 	color: rgb(0, 180, 140);
 }
 
-p a, p a:hover, p a:focus {
-	background-color: rgb(235, 255, 245);
+/*
+p a {
 	padding-left: 3px;
 	padding-right: 3px;
+}
+*/
+
+p a, a:hover {
+	background-color: rgb(235, 255, 245);
 }
 
 /*
@@ -121,25 +126,55 @@ div.navbar div, .dropdown-menu li a {
 	background-color: white;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	/*background-color: #fafafa;*/
-	/*border-bottom: 3px #333 solid;*/
-	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
+.dropdown-menu li a:hover {
+    background-color: rgb(0, 180, 140) !important;
+	background-image: none !important;
+	color: white;
+}
+
+.dropdown-menu {
+	border-top: none;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*
+.navbar-default .navbar-nav > .current-menu-ancestor > a {
+	color: green;
+	background-color: red;
+}
+*/
+
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
 	
-	/*
-	background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 1.0)
-    ),
-	url(http://hiphopdx.com/_/i/hash.gif);
-	*/
-	/*
-	background-image: linear-gradient(
-		#eee, white
-    );
-	*/
+	/* Dark green text on very light green background. */
+	color: rgb(0, 160, 80);
+	background-color: rgb(235, 255, 245);
+}
+
+.navbar-default .navbar-nav> .open > a,
+.navbar-default .navbar-nav> .open > a:hover,
+.navbar-default .navbar-nav> .open > a:focus {
 	
-	color: rgb(0, 180, 90);
+	/* White text on dark green background. */
+	color: white;
+	background-color: rgb(0, 180, 140);
+}
+
+.navbar-default .navbar-nav > .current-menu-ancestor > a,
+.navbar-default .navbar-nav > .current-menu-ancestor > a:hover,
+.navbar-default .navbar-nav > .current-menu-ancestor > a:focus,
+.navbar-default .navbar-nav > .current_page_parent > a,
+.navbar-default .navbar-nav > .current_page_parent > a:hover,
+.navbar-default .navbar-nav > .current_page_parent > a:focus {
+	
+	/* Dark green text on very light green background. */
+	color: rgb(0, 160, 80);
 	background-color: rgb(235, 255, 245);
 }
 
@@ -159,10 +194,6 @@ h1, h2, h3, h4, h5, h6 {
 */
 h4 {
 	margin-top: 20px;
-}
-
-.sidebar h4 /*, .entry-meta*/ {
-    /*text-transform: uppercase;*/
 }
 
 .main-content p, .main-content ul {
@@ -247,9 +278,15 @@ body.home .jumbotron .container {
 }
 
 .entry-meta {
+	margin: 0px 0px 20px -30px;
+}
+
+.entry-meta .posted-on {
 	/*font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;*/
-	font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
-	color: #999;
+	font-family: "Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;
+	color: white;
+	background-color: #bbb;
+	padding: 2px 30px 2px 30px;
 }
 
 .page-title {
@@ -258,7 +295,7 @@ body.home .jumbotron .container {
 }
 
 article .page-title {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 25px;
 }
 
@@ -434,7 +471,6 @@ object {
 .feature-text {
     background-color: #fff;
     padding: 0px;
-	/*box-shadow: 0px 0px 3px #ddd;*/
 }
 
 .feature-head {
@@ -455,22 +491,34 @@ article.post {
 	background-color: #fff;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding: 30px;
-	/*box-shadow: 0px 0px 3px #ddd;*/
+	padding: 25px 30px 30px 30px;
+	/*border-top: 10px rgb(235, 255, 245) solid;*/
+	/*border-bottom: 10px rgb(235, 255, 245) solid;*/
 }
 
 .sidebar {
 	background-color: #fff;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding: 30px;
-	/*box-shadow: 0px 0px 3px #ddd;*/
+	padding: 35px 30px 10px 30px;
+	/*border-top: 10px rgb(235, 255, 245) solid;*/
+	/*border-bottom: 10px rgb(235, 255, 245) solid;*/
+}
+
+.navbar,
+.site-footer,
+article.post,
+.sidebar,
+.feature-text,
+.contact-jumbotron span
+ {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 
 .sidebar h4 {
 	font-family:"Apercu Bold", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal;
 	/*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
-	color: #999;
+	color: #333;
 	margin-top: 0px;
 	line-height: 1.428571429;
 	/*border-bottom: solid 1px #ddd;*/
@@ -529,7 +577,19 @@ article.post {
 }
 
 .page-id-45 #wrap {
-	background-image: url(/wp-content/uploads/rotarylight.jpg);
+	background-image: /*linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),*/ url(/wp-content/uploads/rotarylight.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+body.blog #wrap,
+body.archive #wrap,
+body.single #wrap {
+	background-color: rgb(238, 238, 238);
+	/*background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(7, 7, 7, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
+	/*background-image: linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
+	background-image: linear-gradient(rgba(238, 238, 238, 0.0), rgba(238, 238, 238, 1.0)), url(/wp-content/uploads/typing.jpg);
+	/*background-image: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
