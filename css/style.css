@@ -1,47 +1,11 @@
-/* Too sansy */
-/*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
-/* Good but a little plain */
-/*font-family:"Baskerville Regular", 'Times New Roman', Times, serif, serif; font-weight:normal; font-style:normal;*/
-/* */
-/*font-family:"Goudy Old Style Regular", 'Times New Roman', Times, serif, serif; font-size-adjust:0.404; font-weight:normal; font-style:normal;*/
-/* Pretty but hard to read */
-/*font-family:"Tanger Serif Wide Light", Cambria, Georgia, serif; font-size-adjust:0.49; font-weight:200; font-style:normal;*/
-/* Attractive but a little too angular */
-/*font-family:"FM Light", Times, serif; font-weight:100; font-style:normal;*/
-/* Too round */
-/*font-family:"Berlingske Serif Light", Georgia, serif; font-weight:200; font-style:normal;*/
-/* Cool but too goofy */
-/*font-family:"Typewriter Regular", Georgia, 'Times New Roman', serif; font-weight:normal; font-style:normal;*/
-/* Very nice but too round */
-/*font-family:"Museo Slab 100", Rockwell, Georgia, serif; font-weight:100; font-style:normal;*/
-/* Pretty nice */
-/*font-family: 'Halant', serif; font-weight: 300;*/
-/* Good but too narrow */
-/*font-family: 'Neuton', serif; font-weight: 300;*/
-/* OK but thickness is too variable */
-/*font-family: 'Gilda Display', serif;*/
-/* Good but too square */
-/*font-family: 'Mate', serif;*/
-/* */
-/*font-family: 'Junge', serif;*/
-/*
-Calluna
-jaf-bernino-sans
-freight-text-pro (body)
-Fenice ITC W01 Bold
-Amatic
-Apercu Bold
-Raleway (caps)
-Source Sans Pro
-*/
 @import url(includes/css/bootstrap-wp.css);
-.thick-heading-font, h1, h2, h3, h4, h5, h6 {
+.thick-heading-font, h1, h2, h3, h4, h5, h6, .sidebar h4 {
   font-family: "Apercu Bold", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: bold;
   font-style: normal;
 }
-.thin-heading-font, div.navbar div, .dropdown-menu li a {
+.thin-heading-font, div.navbar div, .dropdown-menu li a, .sidebar p, .sidebar ul, .entry-meta .posted-on, .site-footer, .contact-jumbotron h3 {
   font-family: "Apercu Light", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: 200;
@@ -51,37 +15,23 @@ Source Sans Pro
   font-family: "FM Light", Times, serif;
   font-weight: 100;
   font-style: normal;
-  /* This is a small security for too long strings titles */
 }
 body {
   word-wrap: break-word;
 }
 html, body {
   font-size: 18px;
-  background-color: #fff;
-  /* Sticky footer requires html and body to have no padding or margin. */
+  background-color: white;
   height: 100%;
 }
 a, a:hover, a:hover, a:focus {
   color: #00b48c;
-  /*
-p a {
-	padding-left: 3px;
-	padding-right: 3px;
-}
-*/
 }
 p a, a:hover {
   background-color: #ebfff5;
-  /*
-p a, .contact-jumbotron a {
-	background-color: rgba(0, 127, 255, 0.05);	
-}
-*/
 }
 .container {
   padding: 0px 15px 0px 15px;
-  /* Override container padding from bootstrap-wp.css */
 }
 .big-vertical-padding {
   padding-top: 30px;
@@ -129,19 +79,9 @@ div.navbar div, .dropdown-menu li a {
 .dropdown-menu {
   border-top: none;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  /*
-.navbar-nav a {
-	border-bottom: 1px #555 solid;
-}
-*/
 }
 .dropdown-menu li a {
   text-align: left;
-  /*
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-}
-*/
 }
 h4 {
   margin-top: 20px;
@@ -150,10 +90,6 @@ h4 {
   font-size: 20px;
 }
 .sidebar p, .sidebar ul {
-  font-family: "Apercu Light", Calibri, Roboto, sans-serif;
-  font-size-adjust: 0.508;
-  font-weight: 200;
-  font-style: normal;
   font-size: 17px;
 }
 .sidebar li {
@@ -162,22 +98,17 @@ h4 {
 }
 .sidebar li a {
   color: #555;
-  /* Wrapper for page content to push down footer */
 }
 #wrap {
   min-height: 100%;
-  /* Negative indent footer by its height */
   height: auto;
-  /* Pad bottom by footer height */
   margin: 0 auto -60px;
-  /*background-color: #f3f3f3;*/
   padding: 0 0 60px;
-  /*background-image: url(http://hiphopdx.com/_/i/hash.gif)*/
   background-color: #eee;
 }
 .navbar {
   margin-bottom: 0px;
-  background-color: #fff;
+  background-color: white;
 }
 .widget-title {
   color: #666;
@@ -213,11 +144,6 @@ body.home .jumbotron .container {
   margin: 30px 0px 35px -30px;
 }
 .entry-meta .posted-on {
-  font-family: "Apercu Light", Calibri, Roboto, sans-serif;
-  font-size-adjust: 0.508;
-  font-weight: 200;
-  font-style: normal;
-  /*background-color: #bbb;*/
   color: white;
   background-color: #00b48c;
   padding: 2px 30px 2px 30px;
@@ -231,7 +157,6 @@ article .page-title {
   margin-bottom: 25px;
 }
 .page-title a {
-  /* Avoid link color. */
   color: #333;
 }
 .center-y {
@@ -255,15 +180,10 @@ article .page-title {
 p.big-text {
   font-size: 24px;
   text-align: justify;
-  /* Set the fixed height of the footer here */
 }
 .site-footer {
   height: 60px;
-  background-color: #fff;
-  font-family: "Apercu Light", Calibri, Roboto, sans-serif;
-  font-size-adjust: 0.508;
-  font-weight: 200;
-  font-style: normal;
+  background-color: white;
 }
 .footer-spacer {
   margin-top: 10px;
@@ -272,7 +192,6 @@ p.big-text {
   font-size: 16px;
   padding-top: 20px;
   color: #777;
-  /* Alignment */
 }
 .alignleft {
   display: inline;
@@ -291,7 +210,6 @@ p.big-text {
 }
 .textaligncenter {
   text-align: center;
-  /* Images and wp-captions should always fit and be responsive */
 }
 img {
   display: inline-block;
@@ -303,10 +221,9 @@ img[class*="wp-image-"] {
   margin-bottom: 10px;
 }
 .wp-caption {
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   margin-bottom: 10px;
   max-width: 100%;
-  border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0 10px;
 }
@@ -319,7 +236,6 @@ img[class*="wp-image-"] {
 .wp-caption .wp-caption-text {
   text-align: center;
   margin-top: 10px;
-  /* WP Gallery */
 }
 .gallery {
   margin-bottom: 1.5em;
@@ -331,51 +247,39 @@ img[class*="wp-image-"] {
 }
 .gallery dd {
   margin: 0;
-  /* Make sure embeds and iframes fit their containers */
 }
 embed, iframe, object {
   max-width: 100%;
-  /* Content */
 }
 .main-content-inner {
   padding-bottom: 1.5em;
 }
 .hentry {
   margin: 0 0 1.5em;
-  /* Clearing */
 }
 .clear {
   clear: both;
-  /* Here some needed widget styles 
- * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
 }
 .widget {
   margin-bottom: 2em;
 }
 .widget_nav_menu ul.sub-menu li, .widget_pages ul.children li {
   padding-left: 15px;
-  /* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line. 
- * Note: you can change the whole appearance of the search_form() function in our searchform.php */
 }
 .widget_search .search-form input[type="submit"] {
   display: none;
-  /* Make sure select elements fit in widgets */
 }
 .widget select {
   max-width: 100%;
-  /* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
- * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
 }
 .comment .children {
   margin-left: 1.5em;
 }
 .question-heading {
-  /*font-weight: 300;*/
   margin-top: 50px;
   border-bottom: 2px solid #666;
 }
 .question {
-  /*font-weight: 900;*/
   font-size: 24px;
   margin-top: 50px;
   margin-bottom: 15px;
@@ -383,7 +287,7 @@ embed, iframe, object {
   text-transform: none;
 }
 .feature-text {
-  background-color: #fff;
+  background-color: white;
   padding: 0px;
 }
 .feature-head {
@@ -397,50 +301,28 @@ embed, iframe, object {
   padding-left: 0px;
 }
 article.post {
-  background-color: #fff;
+  background-color: white;
   margin-top: 30px;
   margin-bottom: 30px;
-  /*border-top: 10px rgb(235, 255, 245) solid;*/
-  /*border-bottom: 10px rgb(235, 255, 245) solid;*/
   padding: 25px 30px 30px 30px;
 }
 .sidebar {
-  background-color: #fff;
+  background-color: white;
   margin-top: 30px;
   margin-bottom: 30px;
-  /*border-top: 10px rgb(235, 255, 245) solid;*/
-  /*border-bottom: 10px rgb(235, 255, 245) solid;*/
   padding: 35px 30px 10px 30px;
 }
 .navbar, .site-footer, article.post, .sidebar, .feature-text, .contact-jumbotron span {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 .sidebar h4 {
-  font-family: "Apercu Bold", Calibri, Roboto, sans-serif;
-  font-size-adjust: 0.508;
-  font-weight: bold;
-  font-style: normal;
-  /*font-family:"Apercu Light", Calibri, Roboto, sans-serif; font-size-adjust:0.508; font-weight:200; font-style:normal;*/
   color: #333;
   margin-top: 0px;
-  /*border-bottom: solid 1px #ddd;*/
   line-height: 1.42857;
   text-transform: uppercase;
-  /* Flat Black */
 }
 .gradient-2 {
-  background-color: #000;
-  /* Blue-Teal */
-}
-.gradient-9 {
-  background: #3789c4;
-  background: -moz-linear-gradient(top, #3789c4 0%, #69b3b3 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #3789c4), color-stop(100%, #69b3b3));
-  background: -webkit-linear-gradient(top, #3789c4 0%, #69b3b3 100%);
-  background: -o-linear-gradient(top, #3789c4 0%, #69b3b3 100%);
-  background: -ms-linear-gradient(top, #3789c4 0%, #69b3b3 100%);
-  background: linear-gradient(to bottom, #3789c4 0%, #69b3b3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3789c4', endColorstr='#69b3b3', GradientType=0);
+  background-color: black;
 }
 .cathode-jumbotron {
   background-image: url(/wp-content/uploads/desktopcsseditor.png);
@@ -448,34 +330,24 @@ article.post {
   margin-bottom: 0px;
   color: white;
 }
-.contact-jumbotron h3 {
-  font-family: "Apercu Light", Calibri, Roboto, sans-serif;
-  font-size-adjust: 0.508;
-  font-weight: 200;
-  font-style: normal;
-}
 .contact-jumbotron span {
-  background-color: #fff;
+  background-color: white;
   padding-left: 5px;
   padding-right: 5px;
 }
 .page-id-45 #wrap {
-  /*linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),*/
   background-image: url(/wp-content/uploads/rotarylight.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 body.blog #wrap, body.archive #wrap, body.single #wrap {
-  /*background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(7, 7, 7, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
-  /*background-image: linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
   background-color: #eee;
-  /*background-image: linear-gradient(rgba(200, 200, 200, 0.8), rgba(200, 200, 200, 1.0)), url(/wp-content/uploads/ladyoperator.jpg);*/
   background-image: linear-gradient(rgba(238, 238, 238, 0.0), #eee), url(/wp-content/uploads/typing.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .page-id-45 .jumbotron {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.0);
 }
 .navbar-brand {
   padding-top: 7px;
@@ -487,7 +359,6 @@ body.blog #wrap, body.archive #wrap, body.single #wrap {
   width: 36px;
   height: 36px;
   border: 0;
-  /*margin-right: 10px;*/
   border-style: none;
 }
 .home-page-image-jumbotron {
