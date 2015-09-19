@@ -1,0 +1,19 @@
+.page-id-45 #wrap {
+	background-image: url(/wp-content/uploads/rotarylight.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.page-id-45 .jumbotron {
+	background-color: $transparent-black;
+}
+
+.contact-jumbotron h3 {
+	@extend .thin-heading-font;
+}
+
+.contact-jumbotron span {
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+}
