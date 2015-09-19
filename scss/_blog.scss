@@ -1,4 +1,8 @@
 //
+// BLOG
+//
+
+//
 // Posts
 //
 
@@ -47,6 +51,7 @@ article.post {
 	padding: 25px 30px 30px 30px;
 	//border-top: 10px $primary-light-color solid;
 	//border-bottom: 10px $primary-light-color solid;
+	box-shadow: $weak-shadow;
 }
 
 //
@@ -94,6 +99,7 @@ aside ul li {
 	padding: 35px 30px 10px 30px;
 	//border-top: 10px $primary-light-color solid;
 	//border-bottom: 10px $primary-light-color solid;
+	box-shadow: $weak-shadow;
 }
 
 .sidebar h4 {

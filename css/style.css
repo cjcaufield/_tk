@@ -41,10 +41,6 @@ p.big-text {
   text-align: justify;
 }
 #wrap {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
   background-color: #eee;
 }
 embed, iframe, object {
@@ -59,7 +55,7 @@ embed, iframe, object {
 .container {
   padding: 0px 15px 0px 15px;
 }
-.navbar, .site-footer, article.post, .sidebar, .feature-text, .contact-jumbotron span {
+.navbar, .feature-text, .contact-jumbotron span {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 .big-vertical-padding {
@@ -122,27 +118,24 @@ embed, iframe, object {
     float: none;
   }
 }
-.tight-jumbotron {
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-.jumbotron-white {
-  background-color: white;
-}
-.jumbotron-black {
-  background-color: black;
-  color: white;
-}
-.container-white {
-  background-color: white;
-}
 .navbar {
   margin-bottom: 0px;
+  border-bottom-width: 0px;
   background-color: white;
 }
-div.navbar {
-  border-bottom-width: 0px;
+.dropdown-menu li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+div.navbar div, .dropdown-menu li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: white;
+}
+.dropdown-menu {
+  border-top: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 .navbar-brand {
   padding-top: 7px;
@@ -156,35 +149,6 @@ div.navbar {
   border: 0;
   border-style: none;
 }
-div.navbar div, .dropdown-menu li a {
-  font-size: 18px;
-  text-transform: uppercase;
-  background-color: white;
-}
-.dropdown-menu li a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav > .current-menu-ancestor > a, .navbar-default .navbar-nav > .current-menu-ancestor > a:hover, .navbar-default .navbar-nav > .current-menu-ancestor > a:focus, .navbar-default .navbar-nav > .current_page_parent > a, .navbar-default .navbar-nav > .current_page_parent > a:hover, .navbar-default .navbar-nav > .current_page_parent > a:focus, .dropdown-menu > .active > a:hover {
-  color: #00a050;
-  background-color: #ebfff5;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: white;
-  background-color: #00b48c;
-}
-.dropdown-menu li a:hover {
-  background-color: #00b48c !important;
-  background-image: none !important;
-  color: white !important;
-}
-.dropdown-menu {
-  border-top: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-}
-.dropdown-menu li a {
-  text-align: left;
-}
 @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .sglogo {
     background: url(/wp-content/uploads/gem2logothick2x.png);
@@ -194,6 +158,19 @@ div.navbar div, .dropdown-menu li a {
     border: 0;
     border-style: none;
   }
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .current-menu-ancestor > a, .navbar-default .navbar-nav > .current-menu-ancestor > a:hover, .navbar-default .navbar-nav > .current-menu-ancestor > a:focus, .navbar-default .navbar-nav > .current_page_parent > a, .navbar-default .navbar-nav > .current_page_parent > a:hover, .navbar-default .navbar-nav > .current_page_parent > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #00a050;
+  background-color: #ebfff5;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: #00b48c;
+}
+.dropdown-menu li a:hover {
+  color: white !important;
+  background-color: #00b48c !important;
+  background-image: none !important;
 }
 body.blog #wrap, body.archive #wrap, body.single #wrap {
   background-color: #eee;
@@ -228,6 +205,7 @@ article.post {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 25px 30px 30px 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 .sidebar p, .sidebar ul {
   font-size: 17px;
@@ -260,6 +238,7 @@ aside ul li {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 35px 30px 10px 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 .sidebar h4 {
   color: #333;
@@ -267,9 +246,16 @@ aside ul li {
   line-height: 1.42857;
   text-transform: uppercase;
 }
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
 .site-footer {
   height: 60px;
   background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
 .footer-spacer {
   margin-top: 10px;
@@ -331,16 +317,20 @@ img[class*="wp-image-"] {
 .comment .children {
   margin-left: 1.5em;
 }
-.question-heading {
-  margin-top: 50px;
-  border-bottom: 2px solid #666;
+.tight-jumbotron {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
-.question {
-  font-size: 24px;
-  margin-top: 50px;
-  margin-bottom: 15px;
-  color: #333;
-  text-transform: none;
+.jumbotron-white {
+  background-color: white;
+}
+.jumbotron-black {
+  background-color: black;
+  color: white;
+}
+.container-white {
+  background-color: white;
 }
 .feature-text {
   background-color: white;
@@ -355,6 +345,17 @@ img[class*="wp-image-"] {
 .feature-text ul, .feature-text li {
   list-style: none;
   padding-left: 0px;
+}
+.question-heading {
+  margin-top: 50px;
+  border-bottom: 2px solid #666;
+}
+.question {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: none;
 }
 body.home .main-content {
   height: 100%;
@@ -437,4 +438,5 @@ body.home .jumbotron .container {
   background-color: white;
   padding-left: 5px;
   padding-right: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
