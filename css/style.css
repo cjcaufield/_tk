@@ -1,11 +1,11 @@
-@import url(includes/css/bootstrap-wp.css);
+@import url(../includes/css/bootstrap-wp.css);
 .thick-heading-font, h1, h2, h3, h4, h5, h6, .sidebar h4 {
   font-family: "Apercu Bold", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: bold;
   font-style: normal;
 }
-.thin-heading-font, div.navbar div, .dropdown-menu li a, .entry-meta .posted-on, .sidebar p, .sidebar ul, .site-footer, .contact-jumbotron h3 {
+.thin-heading-font, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar p, .sidebar ul, .site-footer, h3.subheader, .contact-jumbotron h3 {
   font-family: "Apercu Light", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: 200;
@@ -181,25 +181,6 @@ body.blog #wrap, body.archive #wrap, body.single #wrap {
 .hentry {
   margin: 0 0 1.5em;
 }
-.entry-meta {
-  margin: 30px 0px 35px -30px;
-}
-.entry-meta .posted-on {
-  color: white;
-  background-color: #00b48c;
-  padding: 2px 30px 2px 30px;
-}
-.page-title {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-article .page-title {
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-.page-title a {
-  color: #333;
-}
 article.post {
   background-color: white;
   margin-top: 30px;
@@ -207,31 +188,20 @@ article.post {
   padding: 25px 30px 30px 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
-.sidebar p, .sidebar ul {
-  font-size: 17px;
+article.post .page-title {
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
-.sidebar li {
-  padding-top: 0px;
-  padding-bottom: 5px;
+article.post .page-title a {
+  color: #333;
 }
-.sidebar li a {
-  color: #555;
+article.post .entry-meta {
+  margin: 30px 0px 35px -30px;
 }
-.widget-title {
-  color: #666;
-}
-aside ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-aside ul li {
-  list-style: none;
-  padding: 5px 0px 5px 0px;
-  margin: 0px;
-}
-.sidebar aside {
-  margin-bottom: 20px;
+article.post .entry-meta .posted-on {
+  color: white;
+  background-color: #00b48c;
+  padding: 2px 30px 2px 30px;
 }
 .sidebar {
   background-color: white;
@@ -246,6 +216,32 @@ aside ul li {
   line-height: 1.42857;
   text-transform: uppercase;
 }
+.sidebar p, .sidebar ul {
+  font-size: 17px;
+}
+.sidebar li {
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+.sidebar li a {
+  color: #555;
+}
+.sidebar .widget-title {
+  color: #666;
+}
+.sidebar aside {
+  margin-bottom: 20px;
+}
+.sidebar aside ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.sidebar aside ul li {
+  list-style: none;
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+}
 #wrap {
   min-height: 100%;
   height: auto;
@@ -257,10 +253,10 @@ aside ul li {
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 }
-.footer-spacer {
+.site-footer .footer-spacer {
   margin-top: 10px;
 }
-.site-info {
+.site-footer .site-info {
   font-size: 16px;
   padding-top: 20px;
   color: #777;
