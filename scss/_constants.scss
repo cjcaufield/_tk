@@ -34,18 +34,21 @@
 $mid-grey-5: 	rgb( 85,  85,  85);
 $mid-grey-6: 	rgb(102, 102, 102);
 $mid-grey-7: 	rgb(119, 119, 119);
+$light-grey-a: 	rgb(170, 170, 170);
 $light-grey: 	rgb(238, 238, 238);
 
 // Solid
-$darker-green:	rgb(  0, 160,  80);
+$darker-green:	rgb(  0, 140,  70);
 $dark-green:	rgb(  0, 180, 140);
 $light-green:	rgb(235, 255, 245);
 $dark-grey: 	rgb( 51,  51,  51);
 
 // Translucent
 $transparent-light-grey: 	rgba(238, 238, 238, 0.0 );
+$translucent-light-grey: 	rgba(200, 200, 200, 0.4 );
 $transparent-black: 		rgba(  0,   0,   0, 0.0 );
-$translucent-black-u: 		rgba(  0,   0,   0, 0.07);
+$translucent-black-1: 		rgba(  0,   0,   0, 0.1 );
+$translucent-black-2: 		rgba(  0,   0,   0, 0.2 );
 $translucent-black-3: 		rgba(  0,   0,   0, 0.3 );
 $translucent-black-4:		rgba(  0,   0,   0, 0.4 );
 
@@ -55,11 +58,13 @@ $primary-dark-color-2:	$darker-green;
 $primary-light-color:	$light-green;
 
 // Role
-$link-color:	$primary-dark-color;
+$link-color:			$primary-dark-color;
+$light-grey-text-color: $light-grey-a;
 
 //
 // Shadows
 //
 
 $strong-shadow: 0px 0px 10px $translucent-black-4;
-$weak-shadow: 	0px 0px 10px $translucent-black-u;
+$weak-shadow: 	0px 0px 5px  $translucent-black-1;
+$white-glow: 	0px 0px 10px  rgba(255, 255, 255, 1.0);

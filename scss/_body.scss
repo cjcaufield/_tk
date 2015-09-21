@@ -2,6 +2,8 @@
 // BODY
 //
 
+$footer-height: 60px;
+
 body {
     word-wrap: break-word; // Try to prevent overly long titles.
 }
@@ -39,8 +41,23 @@ p.big-text {
 	text-align: justify;
 }
 
+// Wrapper for page content to push down footer
 #wrap {
 	background-color: $light-grey;
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -$footer-height; // Negative indent footer by its height.
+	padding: 0 0 $footer-height; // Pad bottom by footer height.
+}
+
+#wrap-inner {
+	//background-image: url(/wp-content/uploads/hash.gif);
+	//background-repeat: repeat;
+	min-height: 100%;
+	//opacity: 0.5;
+	height: auto;
+	margin: 0 0;
+	padding: 0 0;
 }
 
 // Make sure embeds and iframes fit their containers
@@ -62,8 +79,19 @@ object {
 	padding: 0px 15px 0px 15px; // Override container padding from bootstrap-wp.css.
 }
 
-.navbar,
-.feature-text,
-.contact-jumbotron span {
+.site-footer {
+	@extend .thin-heading-font;
+	height: $footer-height; // Set the fixed height of the footer here.
+	background-color: white;
 	box-shadow: $weak-shadow;
+
+	.footer-spacer {
+		margin-top: 10px;
+	}
+
+	.site-info {
+		font-size: 16px;
+		padding-top: 20px;
+		color: $mid-grey-7;
+	}
 }

@@ -38,34 +38,36 @@ WebFontConfig = { fontdeck: { id: '59420' } };
 	<?php do_action( 'before' ); ?>
 
 <div id="wrap">
-	<div class="navbar navbar-default navbar-static-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" border="0">
-                    <!-- <img src="/wp-content/uploads/Logo.png" /> -->
-                    <div class="sglogo">&nbsp;</div>
-                </a>
-			</div>
-			<!-- The WordPress Menu goes here -->
-			<?php wp_nav_menu(
-				array(
-					'theme_location' => 'primary',
-					'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
-					'menu_class' => 'nav navbar-nav',
-					'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-					'menu_id' => 'main-menu',
-					'walker' => new wp_bootstrap_navwalker()
-				)
-			); ?>
-		</div>
-	</div><!-- .navbar -->
-	<div class="main-content">	
-		<div class="container">
+	<div id="wrap-inner">
+		<div id="wrap-inner-inner">
+			<div class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" border="0">
+		                    <!-- <img src="/wp-content/uploads/Logo.png" /> -->
+		                    <div class="sglogo">&nbsp;</div>
+		                </a>
+					</div>
+					<!-- The WordPress Menu goes here -->
+					<?php wp_nav_menu(
+						array(
+							'theme_location' => 'primary',
+							'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
+							'menu_class' => 'nav navbar-nav',
+							'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+							'menu_id' => 'main-menu',
+							'walker' => new wp_bootstrap_navwalker()
+						)
+					); ?>
+				</div>
+			</div><!-- .navbar -->
+			<div class="main-content">	
+				<div class="container">
 				

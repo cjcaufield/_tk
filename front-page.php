@@ -15,15 +15,13 @@ get_header(); ?>
 </div><!-- end outer container -->
 
 <div class="jumbotron tight-jumbotron jumbotron-white home-page-image-jumbotron">
-	<div class="text-center">
-		<div class="home-page-image-div">
-			<img src="/wp-content/uploads/squattersreversed.jpg" width="100%" border="0" />
-			<!--
-			<div class="home-page-image-overlay">
-				<h1>Secret Geometry</h1>
-			</div>
-			-->
+	<div class="home-page-image-div">
+		<img src="/wp-content/uploads/squattersreversed.jpg" width="100%" border="0" />
+		<!--
+		<div class="home-page-image-overlay">
+			<h1>Secret Geometry</h1>
 		</div>
+		-->
 	</div>
 </div>
 <div class="jumbotron big-vertical-padding jumbotron-white home-page-logo-jumbotron">

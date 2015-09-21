@@ -1,11 +1,11 @@
 @import url(../includes/css/bootstrap-wp.css);
-.thick-heading-font, h1, h2, h3, h4, h5, h6, .sidebar h4 {
+.thick-heading-font, h1, h2, h3, h4, h5, h6, .sidebar .sidebar-content h4 {
   font-family: "Apercu Bold", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: bold;
   font-style: normal;
 }
-.thin-heading-font, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar p, .sidebar ul, .site-footer, h3.subheader, .contact-jumbotron h3 {
+.thin-heading-font, .site-footer, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar .sidebar-content p, .sidebar .sidebar-content ul, h3.subheader, .contact-jumbotron h3 {
   font-family: "Apercu Light", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: 200;
@@ -42,6 +42,16 @@ p.big-text {
 }
 #wrap {
   background-color: #eee;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+#wrap-inner {
+  min-height: 100%;
+  height: auto;
+  margin: 0 0;
+  padding: 0 0;
 }
 embed, iframe, object {
   max-width: 100%;
@@ -55,8 +65,18 @@ embed, iframe, object {
 .container {
   padding: 0px 15px 0px 15px;
 }
-.navbar, .feature-text, .contact-jumbotron span {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+.site-footer {
+  height: 60px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.site-footer .footer-spacer {
+  margin-top: 10px;
+}
+.site-footer .site-info {
+  font-size: 16px;
+  padding-top: 20px;
+  color: #777;
 }
 .big-vertical-padding {
   padding-top: 30px;
@@ -122,6 +142,7 @@ embed, iframe, object {
   margin-bottom: 0px;
   border-bottom-width: 0px;
   background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .dropdown-menu li a {
   padding-top: 10px;
@@ -160,7 +181,7 @@ div.navbar div, .dropdown-menu li a {
   }
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .current-menu-ancestor > a, .navbar-default .navbar-nav > .current-menu-ancestor > a:hover, .navbar-default .navbar-nav > .current-menu-ancestor > a:focus, .navbar-default .navbar-nav > .current_page_parent > a, .navbar-default .navbar-nav > .current_page_parent > a:hover, .navbar-default .navbar-nav > .current_page_parent > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  color: #00a050;
+  color: #008c46;
   background-color: #ebfff5;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -174,9 +195,8 @@ div.navbar div, .dropdown-menu li a {
 }
 body.blog #wrap, body.archive #wrap, body.single #wrap {
   background-color: #eee;
-  background-image: linear-gradient(rgba(238, 238, 238, 0.0), #eee), url(/wp-content/uploads/typing.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(238, 238, 238, 0.5), rgba(238, 238, 238, 0.5)), url(/wp-content/uploads/halftone4.jpg);
+  background-repeat: repeat;
 }
 .hentry {
   margin: 0 0 1.5em;
@@ -186,80 +206,84 @@ article.post {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 25px 30px 30px 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  border-top: 10px #ebfff5 solid;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 article.post .page-title {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 25px;
+  text-align: center;
+  /*
+	.entry-meta {
+		margin: 30px 0px 35px -30px;
+	
+		.posted-on {
+			@extend .thin-heading-font;
+			color: white;
+			background-color: $primary-dark-color;
+			padding: 2px 30px 2px 30px;
+		}
+	}
+	*/
 }
 article.post .page-title a {
   color: #333;
 }
 article.post .entry-meta {
-  margin: 30px 0px 35px -30px;
+  margin: 35px 0px 35px 0px;
+  text-align: center;
 }
 article.post .entry-meta .posted-on {
-  color: white;
-  background-color: #00b48c;
-  padding: 2px 30px 2px 30px;
+  color: #aaa;
+}
+article.post .entry-content {
+  text-align: justify;
 }
 .sidebar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 35px 30px 10px 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  padding: 0px 0px 5px 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
-.sidebar h4 {
+.sidebar .sidebar-top-image {
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar .sidebar-content {
+  padding: 30px 30px 0px 30px;
+}
+.sidebar .sidebar-content h4 {
   color: #333;
   margin-top: 0px;
   line-height: 1.42857;
   text-transform: uppercase;
 }
-.sidebar p, .sidebar ul {
+.sidebar .sidebar-content p, .sidebar .sidebar-content ul {
   font-size: 17px;
 }
-.sidebar li {
+.sidebar .sidebar-content li {
   padding-top: 0px;
   padding-bottom: 5px;
 }
-.sidebar li a {
+.sidebar .sidebar-content li a {
   color: #555;
 }
-.sidebar .widget-title {
+.sidebar .sidebar-content .widget-title {
   color: #666;
 }
-.sidebar aside {
+.sidebar .sidebar-content aside {
   margin-bottom: 20px;
 }
-.sidebar aside ul {
+.sidebar .sidebar-content aside ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-.sidebar aside ul li {
+.sidebar .sidebar-content aside ul li {
   list-style: none;
   padding: 5px 0px 5px 0px;
   margin: 0px;
-}
-#wrap {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
-}
-.site-footer {
-  height: 60px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
-}
-.site-footer .footer-spacer {
-  margin-top: 10px;
-}
-.site-footer .site-info {
-  font-size: 16px;
-  padding-top: 20px;
-  color: #777;
 }
 img {
   display: inline-block;
@@ -331,6 +355,7 @@ img[class*="wp-image-"] {
 .feature-text {
   background-color: white;
   padding: 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .feature-head {
   padding: 0px;
@@ -434,5 +459,5 @@ body.home .jumbotron .container {
   background-color: white;
   padding-left: 5px;
   padding-right: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }

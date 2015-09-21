@@ -8,9 +8,11 @@
  */
 ?>
 
-			<!-- <div class="footer-spacer">&nbsp;</div> -->
-		</div><!-- close .container -->
-	</div><!-- close .main-content -->
+					<!-- <div class="footer-spacer">&nbsp;</div> -->
+				</div><!-- close .container -->
+			</div><!-- close .main-content -->
+		</div><!-- close .wrap-inner-inner -->
+	</div><!-- close .wrap-inner -->
 </div><!-- close wrap -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
