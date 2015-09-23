@@ -35,12 +35,14 @@ $mid-grey-5: 	rgb( 85,  85,  85);
 $mid-grey-6: 	rgb(102, 102, 102);
 $mid-grey-7: 	rgb(119, 119, 119);
 $light-grey-a: 	rgb(170, 170, 170);
+$light-grey-c: 	rgb(204, 204, 204);
 $light-grey: 	rgb(238, 238, 238);
 
 // Solid
 $darker-green:	rgb(  0, 140,  70);
 $dark-green:	rgb(  0, 180, 140);
 $light-green:	rgb(235, 255, 245);
+$lighter-green:	rgba(235, 255, 245, 0.5);
 $dark-grey: 	rgb( 51,  51,  51);
 
 // Translucent
@@ -54,7 +56,7 @@ $translucent-black-4:		rgba(  0,   0,   0, 0.4 );
 
 // Palette
 $primary-dark-color:	$dark-green;
-$primary-dark-color-2:	$darker-green;
+$primary-dark-color-2:  $darker-green;
 $primary-light-color:	$light-green;
 
 // Role

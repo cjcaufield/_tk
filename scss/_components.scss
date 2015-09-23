@@ -65,3 +65,23 @@
 	color: $dark-grey;
 	text-transform: none;
 }
+
+//
+// Social Icons
+//
+
+.social-icons {
+	margin-top: 20px;
+	font-size: 48px;
+	
+	a {
+		color: white;
+		background-color: rgba(0, 0, 0, 0.0);
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+.footer-social-links {
+	color: $light-grey-c;
+}

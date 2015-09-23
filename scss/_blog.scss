@@ -9,12 +9,14 @@
 $a: 238;
 $b: 238;
 
+$halftone-overlay: rgba($a, $a, $a, 0.5);
+
 body.blog #wrap,
 body.archive #wrap,
 body.single #wrap {
 	background-color: $light-grey;
-	background-image: linear-gradient(rgba($a, $a, $a, 0.5), rgba($b, $b, $b, 0.5)), url(/wp-content/uploads/halftone4.jpg);
-	//background-size: 100% auto;
+	background-image: linear-gradient($halftone-overlay, $halftone-overlay), url(/wp-content/uploads/halftone4.jpg);
+	//background-image: url(/wp-content/uploads/hash.gif);
 	background-repeat: repeat;
 }
 
@@ -26,8 +28,8 @@ article.post {
 	background-color: white;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	padding: 25px 30px 30px 30px;
-	border-top: 10px $primary-light-color solid;
+	padding: 30px 0px 30px 0px;
+	//border-top: 5px $primary-light-color solid;
 	//border-bottom: 10px $primary-light-color solid;
 	box-shadow: $weak-shadow;
 	
@@ -38,7 +40,9 @@ article.post {
 	.page-title {
 		margin-top: 15px;
 		margin-bottom: 25px;
-		text-align: center;
+		margin-left: 30px;
+		margin-right: 30px;
+		//text-align: center;
 	
 		a {
 			color: $dark-grey; // Avoid link color.
@@ -59,8 +63,8 @@ article.post {
 	*/
 	
 	.entry-meta {
-		margin: 35px 0px 35px 0px;
-		text-align: center;
+		margin: 35px 30px 35px 30px;
+		//text-align: center;
 	
 		.posted-on {
 			@extend .thin-heading-font;
@@ -71,6 +75,17 @@ article.post {
 	
 	.entry-content {
 		text-align: justify;
+		
+		p, ul {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+		
+		img {
+			width: 100%;
+			height: auto;
+			margin: 5px 0px 40px 0px;
+		}
 	}
 }
 
@@ -79,7 +94,7 @@ article.post {
 //
 
 .sidebar {
-	background-color: rgba(255, 255, 255, 0.9); //white;
+	background-color: white; //rgba(255, 255, 255, 0.9); //white;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	//padding: 35px 30px 10px 30px;
@@ -99,7 +114,7 @@ article.post {
 	.sidebar-content {
 		padding: 30px 30px 0px 30px;
 	
-		h4 {
+		h4.widget-title {
 			@extend .thick-heading-font;
 			color: $dark-grey;
 			margin-top: 0px;

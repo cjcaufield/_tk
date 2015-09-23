@@ -23,11 +23,14 @@ body.home .jumbotron .container {
 .home-page-image-div {
 	display: inline-block;
 	position: relative;
+	width: 100%;
+	height: auto;
 }
 
-.home-page-image-div img {
+.home-page-image-div > img {
 	display: block;
-	max-width:100%;
+	width: 100%;
+	//max-width: 100%;
 }
 
 .home-page-image-overlay {

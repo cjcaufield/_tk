@@ -6,6 +6,45 @@
 	margin-bottom: 0px;
 }
 
+.blinky-jumbotron2 {
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+.blinky-image-div {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.blinky-image-div > .blinky-image-div-inner > img {
+	display: block;
+	max-width: 100%;
+	opacity: 0.2;
+}
+
+.blinky-image-overlay {
+	padding-top: 7%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $translucent-black-3;
+	color: white;
+	
+	h1 {
+		text-color: red;
+	}
+	
+	h3 {
+		text-color: green;
+	}
+}
+
 h3.subheader {
 	@extend .thin-heading-font;
 }

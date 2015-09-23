@@ -32,7 +32,11 @@ a, a:hover, a:hover, a:focus {
 	color: $link-color;
 }
 
-p a, a:hover {
+p a {
+	background-color: $lighter-green;
+}
+
+a:hover {
 	background-color: $primary-light-color;
 }
 
@@ -82,16 +86,18 @@ object {
 .site-footer {
 	@extend .thin-heading-font;
 	height: $footer-height; // Set the fixed height of the footer here.
+	color: $mid-grey-7;
 	background-color: white;
 	box-shadow: $weak-shadow;
+	font-size: 16px;
 
 	.footer-spacer {
 		margin-top: 10px;
 	}
 
-	.site-info {
-		font-size: 16px;
+	.row {
+		
 		padding-top: 20px;
-		color: $mid-grey-7;
+		
 	}
 }

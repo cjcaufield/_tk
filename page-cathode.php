@@ -77,6 +77,10 @@ CONTENT
 		                            </button>
 		                        </form>
 							</div>
+							<div class="social-icons">
+								<a href="http://www.facebook.com/CathodeApp"><i class="fa fa-facebook-square"></i></a>
+								<a href="https://twitter.com/intent/tweet?button_hashtag=CathodeApp" data-url="http://www.secretgeometry.com/apps/cathode"><i class="fa fa-twitter-square"></i></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							</div>
 						</div>
 					</div>
 				</div>

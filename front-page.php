@@ -11,9 +11,7 @@
  */
 
 get_header(); ?>
-
 </div><!-- end outer container -->
-
 <div class="jumbotron tight-jumbotron jumbotron-white home-page-image-jumbotron">
 	<div class="home-page-image-div">
 		<img src="/wp-content/uploads/squattersreversed.jpg" width="100%" border="0" />
@@ -32,7 +30,9 @@ get_header(); ?>
 					<div class="home-page-logo-div">
 						<div class="text-center">
 							<div class="sgbiglogo"></div>
-							<h1>Secret Geometry</h1>
+							<div class="">
+								<h1>Secret Geometry</h1>
+							</div>
 						</div>
 						<div class="spacer30"></div>
 						<p style="text-align:justify">A circle is a simple <a title="Shape" href="https://en.wikipedia.org/wiki/Shape">shape</a> in <a title="Euclidean geometry" href="https://en.wikipedia.org/wiki/Euclidean_geometry">Euclidean geometry</a>. It is the set of all <a title="Point (geometry)" href="https://en.wikipedia.org/wiki/Point_(geometry)">points</a> in a <a class="mw-redirect" title="Plane (mathematics)" href="https://en.wikipedia.org/wiki/Plane_(mathematics)">plane</a> that are at a given distance from a given point, the <a title="Centre (geometry)" href="https://en.wikipedia.org/wiki/Centre_(geometry)">centre</a>; equivalently it is the curve traced out by a point that moves so that its distance from a given point is constant. The distance between any of the points and the centre is called the <a title="Radius" href="https://en.wikipedia.org/wiki/Radius">radius</a>.</p>
@@ -54,5 +54,4 @@ get_header(); ?>
 	</div>
 </div>
 <div class="container"><!-- begin new outer container -->
-
 <?php get_footer(); ?>

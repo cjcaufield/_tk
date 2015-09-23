@@ -1,5 +1,5 @@
 @import url(../includes/css/bootstrap-wp.css);
-.thick-heading-font, h1, h2, h3, h4, h5, h6, .sidebar .sidebar-content h4 {
+.thick-heading-font, h1, h2, h3, h4, h5, h6, .sidebar .sidebar-content h4.widget-title {
   font-family: "Apercu Bold", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: bold;
@@ -33,7 +33,10 @@ h4 {
 a, a:hover, a:hover, a:focus {
   color: #00b48c;
 }
-p a, a:hover {
+p a {
+  background-color: rgba(235, 255, 245, 0.5);
+}
+a:hover {
   background-color: #ebfff5;
 }
 p.big-text {
@@ -67,16 +70,16 @@ embed, iframe, object {
 }
 .site-footer {
   height: 60px;
+  color: #777;
   background-color: white;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
 }
 .site-footer .footer-spacer {
   margin-top: 10px;
 }
-.site-footer .site-info {
-  font-size: 16px;
+.site-footer .row {
   padding-top: 20px;
-  color: #777;
 }
 .big-vertical-padding {
   padding-top: 30px;
@@ -205,14 +208,14 @@ article.post {
   background-color: white;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 25px 30px 30px 30px;
-  border-top: 10px #ebfff5 solid;
+  padding: 30px 0px 30px 0px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 article.post .page-title {
   margin-top: 15px;
   margin-bottom: 25px;
-  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
   /*
 	.entry-meta {
 		margin: 30px 0px 35px -30px;
@@ -230,8 +233,7 @@ article.post .page-title a {
   color: #333;
 }
 article.post .entry-meta {
-  margin: 35px 0px 35px 0px;
-  text-align: center;
+  margin: 35px 30px 35px 30px;
 }
 article.post .entry-meta .posted-on {
   color: #aaa;
@@ -239,8 +241,17 @@ article.post .entry-meta .posted-on {
 article.post .entry-content {
   text-align: justify;
 }
+article.post .entry-content p, article.post .entry-content ul {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+article.post .entry-content img {
+  width: 100%;
+  height: auto;
+  margin: 5px 0px 40px 0px;
+}
 .sidebar {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 0px 0px 5px 0px;
@@ -253,7 +264,7 @@ article.post .entry-content {
 .sidebar .sidebar-content {
   padding: 30px 30px 0px 30px;
 }
-.sidebar .sidebar-content h4 {
+.sidebar .sidebar-content h4.widget-title {
   color: #333;
   margin-top: 0px;
   line-height: 1.42857;
@@ -378,6 +389,19 @@ img[class*="wp-image-"] {
   color: #333;
   text-transform: none;
 }
+.social-icons {
+  margin-top: 20px;
+  font-size: 48px;
+}
+.social-icons a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.0);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.footer-social-links {
+  color: #ccc;
+}
 body.home .main-content {
   height: 100%;
 }
@@ -393,10 +417,12 @@ body.home .jumbotron .container {
 .home-page-image-div {
   display: inline-block;
   position: relative;
+  width: 100%;
+  height: auto;
 }
-.home-page-image-div img {
+.home-page-image-div > img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 .home-page-image-overlay {
   padding-top: 25%;
@@ -446,6 +472,39 @@ body.home .jumbotron .container {
 }
 .blinky-jumbotron {
   margin-bottom: 0px;
+}
+.blinky-jumbotron2 {
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.blinky-image-div {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.blinky-image-div > .blinky-image-div-inner > img {
+  display: block;
+  max-width: 100%;
+  opacity: 0.2;
+}
+.blinky-image-overlay {
+  padding-top: 7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.blinky-image-overlay h1 {
+  text-color: red;
+}
+.blinky-image-overlay h3 {
+  text-color: green;
 }
 .page-id-45 #wrap {
   background-image: url(/wp-content/uploads/rotarylight.jpg);
