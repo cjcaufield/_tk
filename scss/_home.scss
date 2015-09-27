@@ -2,7 +2,7 @@
 // HOME
 //
 
-$big-logo-offset: -132px;
+$big-logo-offset: -100px;
 
 body.home .main-content {
    	height: 100%;
@@ -34,7 +34,7 @@ body.home .jumbotron .container {
 }
 
 .home-page-image-overlay {
-	padding-top: 25%;
+	padding-top: 10%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -42,6 +42,11 @@ body.home .jumbotron .container {
 	height: 100%;
 	background-color: $translucent-black-3;
 	color: white;
+	text-align: center;
+	
+	h1 {
+		text-shadow: $white-glow;
+	}
 }
 
 .home-page-logo-outer-div {
@@ -58,10 +63,10 @@ body.home .jumbotron .container {
 //
 
 .sgbiglogo {
-    background: url(/wp-content/uploads/gem2logo192.png);
+    background: url(/wp-content/uploads/gem2logo128.png);
     background-size: cover;
-    width: 192px;
-    height: 192px;
+    width: 128px; //192px;
+    height: 128px; //192px;
     border: 0;
     border-style: none;
 	margin-left: auto;
@@ -73,10 +78,10 @@ body.home .jumbotron .container {
        only screen and (min-device-pixel-ratio: 2)
 {
     .sgbiglogo {
-        background: url(/wp-content/uploads/gem2logo1922x.png);
+        background: url(/wp-content/uploads/gem2logo1282x.png);
         background-size: cover;
-        width: 192px;
-        height: 192px;
+        width: 128px; //192px;
+        height: 128px; //192px;
         border: 0;
         border-style: none;
     }

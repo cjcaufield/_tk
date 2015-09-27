@@ -5,7 +5,7 @@
   font-weight: bold;
   font-style: normal;
 }
-.thin-heading-font, .site-footer, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar .sidebar-content p, .sidebar .sidebar-content ul, h3.subheader, .contact-jumbotron h3 {
+.thin-heading-font, .site-footer, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar .sidebar-content p, .sidebar .sidebar-content ul, .btn-lg, h3.subheader, .contact-jumbotron h3 {
   font-family: "Apercu Light", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: 200;
@@ -15,6 +15,11 @@
   font-family: "FM Light", Times, serif;
   font-weight: 100;
   font-style: normal;
+}
+.body-font-italic, i {
+  font-family: "FM Light Italic", Times, serif;
+  font-weight: 200;
+  font-style: italic;
 }
 body {
   word-wrap: break-word;
@@ -121,30 +126,18 @@ embed, iframe, object {
 .textaligncenter {
   text-align: center;
 }
-@media (min-width: 768px) {
-  .vcenter-row-sm {
-    display: table;
-  }
-  .vcenter-sm {
-    display: table-cell;
-    vertical-align: middle;
-    float: none;
-  }
+.vertical-center-outer {
+  display: table;
 }
-@media (min-width: 992px) {
-  .vcenter-row {
-    display: table;
-  }
-  .vcenter {
-    display: table-cell;
-    vertical-align: middle;
-    float: none;
-  }
+.vertical-center-inner {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
 }
 .navbar {
   margin-bottom: 0px;
   border-bottom-width: 0px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .dropdown-menu li a {
@@ -155,7 +148,7 @@ embed, iframe, object {
 div.navbar div, .dropdown-menu li a {
   font-size: 18px;
   text-transform: uppercase;
-  background-color: white;
+  background-color: #fff;
 }
 .dropdown-menu {
   border-top: none;
@@ -183,13 +176,21 @@ div.navbar div, .dropdown-menu li a {
     border-style: none;
   }
 }
+.navbar-nav a {
+  border-left: 1px solid rgba(255, 255, 255, 0.0);
+  border-right: 1px solid rgba(255, 255, 255, 0.0);
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .current-menu-ancestor > a, .navbar-default .navbar-nav > .current-menu-ancestor > a:hover, .navbar-default .navbar-nav > .current-menu-ancestor > a:focus, .navbar-default .navbar-nav > .current_page_parent > a, .navbar-default .navbar-nav > .current_page_parent > a:hover, .navbar-default .navbar-nav > .current_page_parent > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   color: #008c46;
   background-color: #ebfff5;
+  border-left: 1px solid #e1f5eb;
+  border-right: 1px solid #e1f5eb;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: white;
   background-color: #00b48c;
+  border-left: 1px solid #00b48c;
+  border-right: 1px solid #00b48c;
 }
 .dropdown-menu li a:hover {
   color: white !important;
@@ -389,8 +390,11 @@ img[class*="wp-image-"] {
   color: #333;
   text-transform: none;
 }
+.btn-lg {
+  font-size: 24px;
+}
 .social-icons {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 48px;
 }
 .social-icons a {
@@ -425,7 +429,7 @@ body.home .jumbotron .container {
   width: 100%;
 }
 .home-page-image-overlay {
-  padding-top: 25%;
+  padding-top: 10%;
   position: absolute;
   top: 0;
   left: 0;
@@ -433,19 +437,23 @@ body.home .jumbotron .container {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
+  text-align: center;
+}
+.home-page-image-overlay h1 {
+  text-shadow: 0px 0px 10px #fff;
 }
 .home-page-logo-outer-div {
-  margin-bottom: -132px;
+  margin-bottom: -100px;
 }
 .home-page-logo-div {
   position: relative;
-  top: -132px;
+  top: -100px;
 }
 .sgbiglogo {
-  background: url(/wp-content/uploads/gem2logo192.png);
+  background: url(/wp-content/uploads/gem2logo128.png);
   background-size: cover;
-  width: 192px;
-  height: 192px;
+  width: 128px;
+  height: 128px;
   border: 0;
   border-style: none;
   margin-left: auto;
@@ -453,10 +461,10 @@ body.home .jumbotron .container {
 }
 @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .sgbiglogo {
-    background: url(/wp-content/uploads/gem2logo1922x.png);
+    background: url(/wp-content/uploads/gem2logo1282x.png);
     background-size: cover;
-    width: 192px;
-    height: 192px;
+    width: 128px;
+    height: 128px;
     border: 0;
     border-style: none;
   }
@@ -479,26 +487,31 @@ body.home .jumbotron .container {
   padding-bottom: 0px;
   text-align: center;
 }
+.blinky-jumbotron2 h1, .blinky-jumbotron2 h3 {
+  text-shadow: 0px 0px 10px #fff;
+}
 .blinky-image-div {
   display: inline-block;
   position: relative;
   width: 100%;
   height: auto;
 }
-.blinky-image-div > .blinky-image-div-inner > img {
-  display: block;
-  max-width: 100%;
-  opacity: 0.2;
-}
-.blinky-image-overlay {
-  padding-top: 7%;
+.blinky-image-table-outer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
+}
+.blinky-image-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.blinky-image-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
 }
 .blinky-image-overlay h1 {
   text-color: red;

@@ -40,18 +40,27 @@ JUMBOTRON 2
 <div class="jumbotron blinky-jumbotron2 jumbotron-black">
 	<div class="blinky-image-div">
 		<img src="/wp-content/uploads/screenshot33.jpg" width="100%" border="0" />
-		<div class="blinky-image-overlay">
-			<h1>Blinky</h1>
-			<h3 class="subheader">Retro Text Editor</h3>
-			<div class="spacer30"></div>
-			<div class="store-badge">
-				<a href="http://itunes.apple.com/us/app/blinky/id550873221">
-					<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
-				</a>
-			</div>
-			<div class="social-icons">
-				<a href="http://www.facebook.com/BlinkyTextEditor"><i class="fa fa-facebook-square"></i></a>
-				<a href="https://twitter.com/intent/tweet?button_hashtag=BlinkyApp" data-url="http://www.secretgeometry.com/apps/blinky"><i class="fa fa-twitter-square"></i></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div class="blinky-image-table-outer">
+			<div class="blinky-image-table">
+				<div class="blinky-image-table-cell">
+					<div class="blinky-image-overlay">
+						<h1>Blinky</h1>
+						<h3 class="subheader">Retro Text Editor</h3>
+						<div class="spacer30"></div>
+						<div class="store-badge">
+							<button type="button" class="btn btn-info btn-lg">Free on the Mac App Store</button>
+							<!--
+							<a href="http://itunes.apple.com/us/app/blinky/id550873221">
+								<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
+							</a>
+							-->
+						</div>
+						<div class="social-icons">
+							<a href="http://www.facebook.com/BlinkyTextEditor"><i class="fa fa-facebook-square"></i></a>
+							<a href="https://twitter.com/intent/tweet?button_hashtag=BlinkyApp" data-url="http://www.secretgeometry.com/apps/blinky"><i class="fa fa-twitter-square"></i></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

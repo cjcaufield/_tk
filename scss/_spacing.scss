@@ -61,28 +61,12 @@
 // Vertical Centering
 //
 
-@media (min-width: 768px)
-{
-    .vcenter-row-sm {
-        display:table;
-    }
-	
-    .vcenter-sm {
-        display:table-cell;
-        vertical-align:middle;
-        float:none;
-    }
+.vertical-center-outer {
+    display: table;
 }
 
-@media (min-width: 992px)
-{
-    .vcenter-row {
-        display:table;
-    }
-	
-    .vcenter {
-        display:table-cell;
-        vertical-align:middle;
-        float:none;
-    }
+.vertical-center-inner {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
 }

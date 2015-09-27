@@ -2,11 +2,14 @@
 // NAVBAR
 //
 
+$navbar-color: rgba(255, 255, 255, 1.0);
+
 .navbar {
     margin-bottom: 0px;
 	border-bottom-width: 0px;
-	background-color: white;
+	background-color: $navbar-color;
 	box-shadow: $weak-shadow;
+	//background-image: url(/wp-content/uploads/screenshot33.jpg);
 }
 
 .dropdown-menu li a {
@@ -19,7 +22,7 @@ div.navbar div, .dropdown-menu li a {
 	@extend .thin-heading-font;
     font-size: 18px;
     text-transform: uppercase;
-	background-color: white;
+	background-color: $navbar-color;
 }
 
 .dropdown-menu {
@@ -39,7 +42,7 @@ div.navbar div, .dropdown-menu li a {
 .sglogo {
     background: url(/wp-content/uploads/gem2logothick.png);
     background-size: cover;
-    width:36px;
+    width: 36px;
     height: 36px;
     border: 0;
     border-style: none;
@@ -52,7 +55,7 @@ div.navbar div, .dropdown-menu li a {
     .sglogo {
         background: url(/wp-content/uploads/gem2logothick2x.png);
         background-size: cover;
-        width:36px;
+        width: 36px;
         height: 36px;
         border: 0;
         border-style: none;
@@ -62,6 +65,11 @@ div.navbar div, .dropdown-menu li a {
 //
 // Highlighting
 //
+
+.navbar-nav a {
+	border-left: 1px solid $transparent-white;
+	border-right: 1px solid $transparent-white;
+}
 
 // Highlight menu items for the current page and ancestors.
 .navbar-default .navbar-nav > .active > a,
@@ -78,8 +86,10 @@ div.navbar div, .dropdown-menu li a {
 .dropdown-menu > .active > a:focus {
 	color: $primary-dark-color-2;
 	background-color: $primary-light-color;
+	border-left: 1px solid $primary-light-color-outline;
+	border-right: 1px solid $primary-light-color-outline;
+	//box-shadow: 0px 0px 5px  $primary-light-color;
 }
-
 
 // Invert the parents of open menus.
 .navbar-default .navbar-nav > .open > a,
@@ -87,6 +97,8 @@ div.navbar div, .dropdown-menu li a {
 .navbar-default .navbar-nav > .open > a:focus {
 	color: white;
 	background-color: $primary-dark-color;
+	border-left: 1px solid $primary-dark-color;
+	border-right: 1px solid $primary-dark-color;
 }
 
 // Invert submenu items when hovering over them.

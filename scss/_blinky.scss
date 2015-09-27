@@ -11,6 +11,10 @@
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: center;
+	
+	h1, h3 {
+		text-shadow: $white-glow;
+	}
 }
 
 .blinky-image-div {
@@ -20,13 +24,28 @@
 	height: auto;
 }
 
-.blinky-image-div > .blinky-image-div-inner > img {
-	display: block;
-	max-width: 100%;
-	opacity: 0.2;
+.blinky-image-table-outer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.blinky-image-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.blinky-image-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
 }
 
 .blinky-image-overlay {
+	/*
 	padding-top: 7%;
 	position: absolute;
 	top: 0;
@@ -35,6 +54,12 @@
 	height: 100%;
 	background-color: $translucent-black-3;
 	color: white;
+	*/
+	
+	//position: absolute;
+    //display: table-cell;
+    //vertical-align: middle;
+    //float: none;
 	
 	h1 {
 		text-color: red;

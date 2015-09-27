@@ -26,38 +26,47 @@
 	font-style: normal;
 }
 
+.body-font-italic {
+	font-family: "FM Light Italic", Times, serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
 //
 // Colors
 //
 
 // Greyscale
-$mid-grey-5: 	rgb( 85,  85,  85);
-$mid-grey-6: 	rgb(102, 102, 102);
-$mid-grey-7: 	rgb(119, 119, 119);
-$light-grey-a: 	rgb(170, 170, 170);
-$light-grey-c: 	rgb(204, 204, 204);
-$light-grey: 	rgb(238, 238, 238);
+$dark-grey:    rgb( 51,  51,  51);
+$mid-grey-5:   rgb( 85,  85,  85);
+$mid-grey-6:   rgb(102, 102, 102);
+$mid-grey-7:   rgb(119, 119, 119);
+$light-grey-a: rgb(170, 170, 170);
+$light-grey-c: rgb(204, 204, 204);
+$light-grey:   rgb(238, 238, 238);
 
 // Solid
-$darker-green:	rgb(  0, 140,  70);
-$dark-green:	rgb(  0, 180, 140);
-$light-green:	rgb(235, 255, 245);
-$lighter-green:	rgba(235, 255, 245, 0.5);
-$dark-grey: 	rgb( 51,  51,  51);
+$darker-green:		 rgb(  0, 140,  70);
+$dark-green:		 rgb(  0, 180, 140);
+$light-green:		 rgb(235, 255, 245);
+$lighter-green:		 rgba(235, 255, 245, 0.5);
+$darker-light-green: rgb(225, 245, 235);
 
 // Translucent
-$transparent-light-grey: 	rgba(238, 238, 238, 0.0 );
-$translucent-light-grey: 	rgba(200, 200, 200, 0.4 );
-$transparent-black: 		rgba(  0,   0,   0, 0.0 );
-$translucent-black-1: 		rgba(  0,   0,   0, 0.1 );
-$translucent-black-2: 		rgba(  0,   0,   0, 0.2 );
-$translucent-black-3: 		rgba(  0,   0,   0, 0.3 );
-$translucent-black-4:		rgba(  0,   0,   0, 0.4 );
+$transparent-white: 	 rgba(255, 255, 255, 0.0 );
+$transparent-light-grey: rgba(238, 238, 238, 0.0 );
+$translucent-light-grey: rgba(200, 200, 200, 0.4 );
+$transparent-black: 	 rgba(  0,   0,   0, 0.0 );
+$translucent-black-1: 	 rgba(  0,   0,   0, 0.1 );
+$translucent-black-2: 	 rgba(  0,   0,   0, 0.2 );
+$translucent-black-3: 	 rgba(  0,   0,   0, 0.3 );
+$translucent-black-4:	 rgba(  0,   0,   0, 0.4 );
 
 // Palette
-$primary-dark-color:	$dark-green;
-$primary-dark-color-2:  $darker-green;
-$primary-light-color:	$light-green;
+$primary-dark-color:		  $dark-green;
+$primary-dark-color-2:  	  $darker-green;
+$primary-light-color:	 	  $light-green;
+$primary-light-color-outline: $darker-light-green;
 
 // Role
 $link-color:			$primary-dark-color;

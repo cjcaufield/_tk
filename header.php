@@ -12,7 +12,6 @@
 <!-- Fontdeck javascript font loading. -->
 <script type="text/javascript">
 WebFontConfig = { fontdeck: { id: '59420' } };
-
 (function() {
   var wf = document.createElement('script');
   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -40,7 +39,7 @@ WebFontConfig = { fontdeck: { id: '59420' } };
 <div id="wrap">
 	<div id="wrap-inner">
 		<div id="wrap-inner-inner">
-			<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar navbar-default navbar-static-top navbar-transparent" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
 						<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->

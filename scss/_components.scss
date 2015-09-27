@@ -67,11 +67,20 @@
 }
 
 //
+// Buttons
+//
+
+.btn-lg {
+	@extend .thin-heading-font;
+	font-size: 24px;
+}
+
+//
 // Social Icons
 //
 
 .social-icons {
-	margin-top: 20px;
+	margin-top: 25px;
 	font-size: 48px;
 	
 	a {
