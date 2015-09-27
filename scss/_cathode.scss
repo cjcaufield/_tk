@@ -7,6 +7,10 @@
 	background-size: cover;
 	margin-bottom: 0px;
 	color: white;
+	
+	h1, h3 {
+		text-shadow: $white-glow;
+	}
 }
 
 .gradient-2 {

@@ -48,12 +48,7 @@ JUMBOTRON 2
 						<h3 class="subheader">Retro Text Editor</h3>
 						<div class="spacer30"></div>
 						<div class="store-badge">
-							<button type="button" class="btn btn-info btn-lg">Free on the Mac App Store</button>
-							<!--
-							<a href="http://itunes.apple.com/us/app/blinky/id550873221">
-								<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
-							</a>
-							-->
+							<a class="btn btn-info btn-lg" role="button" href="http://itunes.apple.com/us/app/blinky/id550873221">Mac App Store</a>
 						</div>
 						<div class="social-icons">
 							<a href="http://www.facebook.com/BlinkyTextEditor"><i class="fa fa-facebook-square"></i></a>
@@ -71,6 +66,10 @@ JUMBOTRON 2
 			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 				<div class="spacer40"></div>
 				<p class="big-text">A circle is a simple <a title="Shape" href="https://en.wikipedia.org/wiki/Shape">shape</a> in <a title="Euclidean geometry" href="https://en.wikipedia.org/wiki/Euclidean_geometry">Euclidean geometry</a>. It is the set of all <a title="Point (geometry)" href="https://en.wikipedia.org/wiki/Point_(geometry)">points</a> in a <a class="mw-redirect" title="Plane (mathematics)" href="https://en.wikipedia.org/wiki/Plane_(mathematics)">plane</a> that are at a given distance from a given point, the <a title="Centre (geometry)" href="https://en.wikipedia.org/wiki/Centre_(geometry)">centre</a>; equivalently it is the curve traced out by a point that moves so that its distance from a given point is constant. The distance between any of the points and the centre is called the <a title="Radius" href="https://en.wikipedia.org/wiki/Radius">radius</a>.</p>
+				<div style="text-align:center;">
+					<h1>★★★★★</h1>
+					<p>4.5 / 5.0 on the App Store</p>
+				</div>
 				<div class="spacer30"></div>
 			</div>
 		</div>

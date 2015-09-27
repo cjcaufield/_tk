@@ -475,6 +475,9 @@ body.home .jumbotron .container {
   margin-bottom: 0px;
   color: white;
 }
+.cathode-jumbotron h1, .cathode-jumbotron h3 {
+  text-shadow: 0px 0px 10px #fff;
+}
 .gradient-2 {
   background-color: black;
 }

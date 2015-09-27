@@ -44,36 +44,33 @@ CONTENT
 					<h2>iOS</h2>
 					<div class="action-buttons">
 						<div class="store-badge">
-							<a href="https://itunes.apple.com/us/app/cathode/id656982811?ls=1&mt=8">
-								<img src="/wp-content/media/AppStoreBadge.svg" width="190px" height="45px" />
+							<a  class="btn btn-info btn-lg" role="button" href="https://itunes.apple.com/us/app/cathode/id656982811?ls=1&mt=8">
+								iOS App Store
 							</a>
 						</div>
 					</div>
-					<p>Universal iOS 7 app.<br>Connects to any Mac or SSH server.</p>
 				</div>
 			</div>
-			<div class="col-sm-6" style="border-left: 1px solid #eee;">
+			<div class="col-sm-6">
 				<div class="action-div">
 					<h2>Mac</h2>
 						<div class="action-buttons">
 							<div class="store-badge">
-								<!-- Replace with http://www.appstore.com/mac/cathode ? -->
-								<a href="https://itunes.apple.com/us/app/cathode/id499233976?mt=12&uo=4" target="itunes_store">
-									<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
+								<a class="btn btn-info btn-lg" role="button" href="https://itunes.apple.com/us/app/cathode/id499233976?mt=12&uo=4" target="itunes_store">
+									Mac App Store
 								</a>
 							</div>
 						</div>
 						<div class="action-buttons">
-							<p>Runs on any 2008+ Mac with OS X 10.7+.</p>
 							<div class="store-badge">
-								<a href="http://store.secretgeometry.com/download.php?id=7" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span><span class="btn-label">Download Demo</span></a>
+								<a href="http://store.secretgeometry.com/download.php?id=7" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-circle-arrow-down"></span><span class="btn-label">Download Demo</span></a>
 							</div>
 							<div class="store-badge">
 		                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 		                            <input type="hidden" name="cmd" value="_s-xclick">
 		                            <input type="hidden" name="hosted_button_id" value="9X5HYCUX8PGJC">
-		                            <button type="submit" class="btn btn-success btn-block">
-		                                <span class="glyphicon glyphicon-gift"></span><span class="btn-label">Purchase Direct</span>
+		                            <button type="submit" class="btn btn-info btn-lg">
+		                                Purchase Direct
 		                            </button>
 		                        </form>
 							</div>
