@@ -15,8 +15,8 @@ body.blog #wrap,
 body.archive #wrap,
 body.single #wrap {
 	background-color: $light-grey;
-	background-image: linear-gradient($halftone-overlay, $halftone-overlay), url(/wp-content/uploads/halftone4.jpg);
-	//background-image: url(/wp-content/uploads/hash.gif);
+	//background-image: linear-gradient($halftone-overlay, $halftone-overlay), url(/wp-content/uploads/halftone4.jpg);
+	background-image: url(/wp-content/uploads/hash.gif);
 	background-repeat: repeat;
 }
 

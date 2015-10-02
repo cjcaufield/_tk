@@ -1,14 +1,14 @@
 //
-// HOME
+// home2
 //
 
-$big-logo-offset: -100px;
+$big-logo-offset: -94px;
 
 .dark-green-overlay {
 	background-color: $translucent-black-4;
 }
 
-.home-page-image-jumbotron {
+.home2-page-image-jumbotron {
 	margin-bottom: 0px;
 	padding: 0px;
 	text-align: center;
@@ -17,56 +17,56 @@ $big-logo-offset: -100px;
 		text-shadow: 0px 0px 10px rgb(175, 255, 215); //rgba(0, 255, 127, 1.0); //$white-glow;
 	}
 	
-	// needed still?
-	//overflow: visible;
+	overflow: visible; // needed still?
 }
 
-.home-page-logo-jumbotron {
-	// needed still?
-	//overflow: visible;
+.home2-page-logo-jumbotron {
+	overflow: visible; // needed still?
 }
 
-/*
-.home-page-image-div {
+.home2-page-image-div {
 	display: inline-block;
 	position: relative;
 	width: 100%;
 	height: auto;
 }
 
-.home-page-image-div > img {
+.home2-page-image-div > img {
 	display: block;
 	width: 100%;
 	//max-width: 100%;
 }
 
-.home-page-image-overlay {
-	padding-top: 10%;
+.home2-page-logo-outer-div {
+	margin-bottom: $big-logo-offset;
+}
+
+.home2-page-logo-div {
+	position: relative;
+	top: $big-logo-offset;
+}
+
+.noise-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: $translucent-black-3;
-	color: white;
-	text-align: center;
-	
-	h1 {
-		text-shadow: $white-glow;
-	}
-}
-*/
-
-/*
-.home-page-logo-outer-div {
-	margin-bottom: $big-logo-offset;
+	//background-image: url(/wp-content/uploads/noisecolor256.png);
+	background-image: url(/wp-content/uploads/noisecolor256alpha80.png);
+	//background-image: url(/wp-content/uploads/noisegrey256.png);
+	//background-image: url(/wp-content/uploads/noisegrey256alpha80.png);
 }
 
-.home-page-logo-div {
-	position: relative;
-	top: $big-logo-offset;
+.left-app-icon {
+	float: right;
+	margin-right: 50px;
 }
-*/
+
+.right-app-icon {
+	float: left;
+	margin-left: 50px;
+}
 
 //
 // Big logo
