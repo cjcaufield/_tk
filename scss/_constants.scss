@@ -49,8 +49,13 @@ $light-grey:   rgb(238, 238, 238);
 $darker-green:		 rgb(  0, 140,  70);
 $dark-green:		 rgb(  0, 180, 140);
 $light-green:		 rgb(235, 255, 245);
-$lighter-green:		 rgba(235, 255, 245, 0.5);
 $darker-light-green: rgb(225, 245, 235);
+
+$dark-pink:		 	 rgb(234, 100, 182);
+$light-pink:		 rgb(255, 245, 250); //rgb(255, 245, 250); //rgb(255, 235, 245);
+
+$lighter-green:		 rgba(235, 255, 245, 0.5);
+$lighter-pink:		 rgba(255, 235, 245, 0.5);
 
 // Translucent
 $transparent-white: 	 rgba(255, 255, 255, 0.0 );
@@ -67,9 +72,12 @@ $primary-dark-color:		  $dark-green;
 $primary-dark-color-2:  	  $darker-green;
 $primary-light-color:	 	  $light-green;
 $primary-light-color-outline: $darker-light-green;
+$secondary-dark-color:		  $dark-pink;
+$secondary-light-color:		  $light-pink;
 
 // Role
 $link-color:			$primary-dark-color;
+$alt-link-color:		$secondary-dark-color;
 $light-grey-text-color: $light-grey-a;
 
 //

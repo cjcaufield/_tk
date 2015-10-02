@@ -5,7 +5,7 @@
   font-weight: bold;
   font-style: normal;
 }
-.thin-heading-font, .site-footer, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar .sidebar-content p, .sidebar .sidebar-content ul, .btn-lg, h3.subheader, .contact-jumbotron h3 {
+.thin-heading-font, .sans-serif, .site-footer, div.navbar div, .dropdown-menu li a, article.post .entry-meta .posted-on, .sidebar .sidebar-content p, .sidebar .sidebar-content ul, .btn, h3.subheader, .contact-jumbotron h3 {
   font-family: "Apercu Light", Calibri, Roboto, sans-serif;
   font-size-adjust: 0.508;
   font-weight: 200;
@@ -35,14 +35,23 @@ h4 {
 .main-content p, .main-content ul {
   font-size: 20px;
 }
-a, a:hover, a:hover, a:focus {
+a, a:hover, a:focus {
   color: #00b48c;
+}
+a.alt-color, a.alt-color:hover, a.alt-color:hover, a.alt-color:focus {
+  color: #ea64b6;
 }
 p a {
   background-color: rgba(235, 255, 245, 0.5);
 }
+p a.alt-color {
+  background-color: rgba(255, 235, 245, 0.5);
+}
 a:hover {
   background-color: #ebfff5;
+}
+a.alt-color:hover {
+  background-color: #fff5fa;
 }
 p.big-text {
   font-size: 24px;
@@ -60,6 +69,9 @@ p.big-text {
   height: auto;
   margin: 0 0;
   padding: 0 0;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 embed, iframe, object {
   max-width: 100%;
@@ -133,6 +145,33 @@ embed, iframe, object {
   display: table-cell;
   vertical-align: middle;
   float: none;
+}
+.jumbo-image-div {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.jumbo-image-centering-table-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.jumbo-image-centering-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.jumbo-image-centering-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .navbar {
   margin-bottom: 0px;
@@ -350,7 +389,6 @@ img[class*="wp-image-"] {
   margin-left: 1.5em;
 }
 .tight-jumbotron {
-  height: 100%;
   padding: 0px;
   margin: 0px;
 }
@@ -406,48 +444,188 @@ img[class*="wp-image-"] {
 .footer-social-links {
   color: #ccc;
 }
-body.home .main-content {
-  height: 100%;
-}
-body.home .jumbotron .container {
-  height: 100%;
+.dark-green-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .home-page-image-jumbotron {
-  overflow: visible;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.home-page-image-jumbotron h1, .home-page-image-jumbotron h3 {
+  text-shadow: 0px 0px 10px #afffd7;
 }
 .home-page-logo-jumbotron {
+  /*
+.home-page-image-div {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.home-page-image-div > img {
+	display: block;
+	width: 100%;
+	//max-width: 100%;
+}
+
+.home-page-image-overlay {
+	padding-top: 10%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $translucent-black-3;
+	color: white;
+	text-align: center;
+	
+	h1 {
+		text-shadow: $white-glow;
+	}
+}
+*/
+  /*
+.home-page-logo-outer-div {
+	margin-bottom: $big-logo-offset;
+}
+
+.home-page-logo-div {
+	position: relative;
+	top: $big-logo-offset;
+}
+*/
+}
+.sgbiglogo {
+  background: url(/wp-content/uploads/gem2logo128.png);
+  background-size: cover;
+  width: 128px;
+  height: 128px;
+  border: 0;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .sgbiglogo {
+    background: url(/wp-content/uploads/gem2logo1282x.png);
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    border: 0;
+    border-style: none;
+  }
+}
+.dark-green-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.home2-page-image-jumbotron {
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
   overflow: visible;
 }
-.home-page-image-div {
+.home2-page-image-jumbotron h1, .home2-page-image-jumbotron h3 {
+  text-shadow: 0px 0px 10px #afffd7;
+}
+.home2-page-logo-jumbotron {
+  overflow: visible;
+}
+.home2-page-image-div {
   display: inline-block;
   position: relative;
   width: 100%;
   height: auto;
 }
-.home-page-image-div > img {
+.home2-page-image-div > img {
   display: block;
   width: 100%;
 }
-.home-page-image-overlay {
-  padding-top: 10%;
+.home2-page-logo-outer-div {
+  margin-bottom: -94px;
+}
+.home2-page-logo-div {
+  position: relative;
+  top: -94px;
+}
+.noise-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
+  background-image: url(/wp-content/uploads/noisecolor256alpha80.png);
+}
+.sgbiglogo {
+  background: url(/wp-content/uploads/gem2logo128.png);
+  background-size: cover;
+  width: 128px;
+  height: 128px;
+  border: 0;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .sgbiglogo {
+    background: url(/wp-content/uploads/gem2logo1282x.png);
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    border: 0;
+    border-style: none;
+  }
+}
+.dark-green-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.home3-page-image-jumbotron {
+  margin-bottom: 0px;
+  padding: 0px;
   text-align: center;
 }
-.home-page-image-overlay h1 {
-  text-shadow: 0px 0px 10px #fff;
+.home3-page-logo-jumbotron {
+  /*
+.home3-page-image-div {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: auto;
 }
-.home-page-logo-outer-div {
-  margin-bottom: -100px;
+
+.home3-page-image-div > img {
+	display: block;
+	width: 100%;
+	//max-width: 100%;
 }
-.home-page-logo-div {
-  position: relative;
-  top: -100px;
+
+.home3-page-image-overlay {
+	padding-top: 10%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $translucent-black-3;
+	color: white;
+	text-align: center;
+	
+	h1 {
+		text-shadow: $white-glow;
+	}
+}
+*/
+  /*
+.home3-page-logo-outer-div {
+	margin-bottom: $big-logo-offset;
+}
+
+.home3-page-logo-div {
+	position: relative;
+	top: $big-logo-offset;
+}
+*/
 }
 .sgbiglogo {
   background: url(/wp-content/uploads/gem2logo128.png);
@@ -470,10 +648,9 @@ body.home .jumbotron .container {
   }
 }
 .cathode-jumbotron {
-  background-image: url(/wp-content/uploads/desktopcsseditor.png);
-  background-size: cover;
   margin-bottom: 0px;
-  color: white;
+  padding: 0px;
+  text-align: center;
 }
 .cathode-jumbotron h1, .cathode-jumbotron h3 {
   text-shadow: 0px 0px 10px #fff;
@@ -483,49 +660,17 @@ body.home .jumbotron .container {
 }
 .blinky-jumbotron {
   margin-bottom: 0px;
-}
-.blinky-jumbotron2 {
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px;
   text-align: center;
 }
-.blinky-jumbotron2 h1, .blinky-jumbotron2 h3 {
+.blinky-jumbotron h1, .blinky-jumbotron h3 {
   text-shadow: 0px 0px 10px #fff;
-}
-.blinky-image-div {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-.blinky-image-table-outer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.blinky-image-table {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.blinky-image-table-cell {
-  display: table-cell;
-  vertical-align: middle;
-  float: none;
-}
-.blinky-image-overlay h1 {
-  text-color: red;
-}
-.blinky-image-overlay h3 {
-  text-color: green;
 }
 .page-id-45 #wrap {
   background-image: url(/wp-content/uploads/rotarylight.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: 0px 50px;
 }
 .page-id-45 .jumbotron {
   background-color: rgba(0, 0, 0, 0.0);

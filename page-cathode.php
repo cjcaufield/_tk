@@ -4,79 +4,69 @@
  */
 ?>
 <?php get_header(); ?>
-<!--
-
-Prevent FancyBox from showing popups on small screens.
-
--->
-<!-- Optionally disable fancybox at certain sizes.
-<script type="text/javascript">
-jQuery(function() {
-    jQuery('.popbox').fancybox({
-        onStart: function(link) {
-            if (jQuery(window).width() < 768) {
-                return false;
-            }
-        }
-    });
-});
-</script>
--->
+</div><!-- end outer container -->
 <!--
 
 CONTENT
 
 -->
-</div><!-- end outer container -->
-<div class="jumbotron cathode-jumbotron">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="textaligncenter">
-					<h1>Cathode</h1>
-					<h3 class="subheader">Vintage Terminal</h3>
-				</div>
-			</div>
-		</div>
-		<div class="row action-row text-center">
-			<div class="col-sm-6">
-				<div class="action-div">
-					<h2>iOS</h2>
-					<div class="action-buttons">
-						<div class="store-badge">
-							<a  class="btn btn-info btn-lg" role="button" href="https://itunes.apple.com/us/app/cathode/id656982811?ls=1&mt=8">
-								iOS App Store
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="action-div">
-					<h2>Mac</h2>
-						<div class="action-buttons">
-							<div class="store-badge">
-								<a class="btn btn-info btn-lg" role="button" href="https://itunes.apple.com/us/app/cathode/id499233976?mt=12&uo=4" target="itunes_store">
-									Mac App Store
-								</a>
+<div class="jumbotron cathode-jumbotron jumbotron-black">
+	<div class="jumbo-image-div">
+		<img src="/wp-content/uploads/desktopcsseditor.png" width="100%" height="auto" border="0" />
+		<div class="jumbo-image-centering-table-wrapper">
+			<div class="jumbo-image-centering-table">
+				<div class="jumbo-image-centering-tablecell">
+					<div class="cathode-image-overlay">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="textaligncenter">
+										<h1>Cathode</h1>
+										<h3 class="subheader">Vintage Terminal</h3>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="action-buttons">
-							<div class="store-badge">
-								<a href="http://store.secretgeometry.com/download.php?id=7" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-circle-arrow-down"></span><span class="btn-label">Download Demo</span></a>
-							</div>
-							<div class="store-badge">
-		                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-		                            <input type="hidden" name="cmd" value="_s-xclick">
-		                            <input type="hidden" name="hosted_button_id" value="9X5HYCUX8PGJC">
-		                            <button type="submit" class="btn btn-info btn-lg">
-		                                Purchase Direct
-		                            </button>
-		                        </form>
-							</div>
-							<div class="social-icons">
-								<a href="http://www.facebook.com/CathodeApp"><i class="fa fa-facebook-square"></i></a>
-								<a href="https://twitter.com/intent/tweet?button_hashtag=CathodeApp" data-url="http://www.secretgeometry.com/apps/cathode"><i class="fa fa-twitter-square"></i></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							<div class="row action-row text-center">
+								<div class="col-xs-6">
+									<div class="action-div">
+										<div class="action-buttons">
+											<div class="store-badge">
+												<a href="http://store.secretgeometry.com/download.php?id=7" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-circle-arrow-down"></span><span class="btn-label">Download Demo</span></a>
+											</div>
+											<div class="store-badge">
+						                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						                            <input type="hidden" name="cmd" value="_s-xclick">
+						                            <input type="hidden" name="hosted_button_id" value="9X5HYCUX8PGJC">
+						                            <button type="submit" class="btn btn-info btn-lg">
+						                                Purchase Direct
+						                            </button>
+						                        </form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="action-div">
+										<div class="action-buttons">
+											<div class="store-badge">
+												<a class="btn btn-info btn-lg" role="button" href="https://itunes.apple.com/us/app/cathode/id499233976?mt=12&uo=4" target="itunes_store">
+													Mac App Store
+												</a>
+											</div>
+											<div class="store-badge">
+												<a  class="btn btn-info btn-lg" role="button" href="https://itunes.apple.com/us/app/cathode/id656982811?ls=1&mt=8">
+													iOS App Store
+												</a>
+											</div>
+										</div>
+										<div class="action-buttons">
+											<div class="social-icons">
+												<a href="http://www.facebook.com/CathodeApp"><i class="fa fa-facebook-square"></i></a>
+												<a href="https://twitter.com/intent/tweet?button_hashtag=CathodeApp" data-url="http://www.secretgeometry.com/apps/cathode"><i class="fa fa-twitter-square"></i></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -92,24 +82,19 @@ ROW A
    
 -->
 </div><!-- end outer container -->
-<div class="jumbotron gradient-9">
+<div class="jumbotron jumbotron-white">
 	<div class="container">
-		<div class="row product-row product-banner vcenter-row-sm">
-			<div class="col-sm-6 vcenter-sm">
-				<div class="jumbo-section">
-					<img src="/wp-content/uploads/iPhone5cCathodeFlatOptimized.png" />
-				</div>
-			</div>
-			<div class="col-sm-6 vcenter-sm">
-				<div class="jumbo-section">
-					<div class="centered-text-container">
-						<div class="centered-text">
-							<h2>Beauty & Brains</h2>
-							<p>Cathode is a fully customizable terminal app with a look inspired by classic computers.</p>
-							<p>Don't let the playful exterior fool you; under the hood there's an advanced emulator designed for serious work.</p>
-							<p>Whether you prefer crisp, clean text, or a flickering, glowing mess, Cathode is the perfect tool for hacking in style.</p>
-						</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div class="spacer40"></div>
+					<p class="big-text">Cathode is a fully customizable terminal app with a look inspired by classic computers.
+					Don't let the playful exterior fool you; under the hood there's an advanced emulator designed for serious work.
+					Whether you prefer crisp, clean text, or a flickering, glowing mess, Cathode is the perfect tool for hacking in style.</p>
+					<div style="text-align:center;">
+						<h1>★★★★★</h1>
+						<p>4.5 / 5.0 on the App Store</p>
 					</div>
+					<div class="spacer30"></div>
 				</div>
 			</div>
 		</div>

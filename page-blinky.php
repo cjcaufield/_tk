@@ -7,45 +7,18 @@
 </div><!-- end outer container -->
 <!--
 
-JUMBOTRON 1
-
--->
-<!--
-<div class="jumbotron blinky-jumbotron jumbotron-black">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-3">
-				<h1>Blinky</h1>
-				<h3 class="subheader">Retro Text Editor</h3>
-				<div class="spacer30"></div>
-				<div class="store-badge">
-					<a href="http://itunes.apple.com/us/app/blinky/id550873221">
-						<img src="/wp-content/media/MacAppStoreBadge.svg" width="230px" height="45px" />
-					</a>
-				</div>
-				<div class="spacer30"></div>
-			</div>
-			<div class="col-xs-12 col-md-9">
-				<img src="/wp-content/uploads/macbookair.png" class="img-responsive">
-			</div>
-		</div>
-	</div>
-</div>
--->
-<!--
-
 JUMBOTRON 2
 
 -->
-<div class="jumbotron blinky-jumbotron2 jumbotron-black">
-	<div class="blinky-image-div">
-		<img src="/wp-content/uploads/screenshot33.jpg" width="100%" border="0" />
-		<div class="blinky-image-table-outer">
-			<div class="blinky-image-table">
-				<div class="blinky-image-table-cell">
+<div class="jumbotron blinky-jumbotron jumbotron-black">
+	<div class="jumbo-image-div">
+		<img src="/wp-content/uploads/screenshot33.jpg" width="100%" height="auto" border="0" />
+		<div class="jumbo-image-centering-table-wrapper">
+			<div class="jumbo-image-centering-table">
+				<div class="jumbo-image-centering-tablecell">
 					<div class="blinky-image-overlay">
 						<h1>Blinky</h1>
-						<h3 class="subheader">Retro Text Editor</h3>
+						<h3 class="subheader">Text Editor</h3>
 						<div class="spacer30"></div>
 						<div class="store-badge">
 							<a class="btn btn-info btn-lg" role="button" href="http://itunes.apple.com/us/app/blinky/id550873221">Mac App Store</a>

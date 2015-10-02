@@ -31,8 +31,10 @@ get_header(); ?>
 								<div class="spacer50"></div>
 								<h2><span>We're also on <a href="http://www.twitter.com/secretgeo">Twitter</a> and <a href="http://www.facebook.com/pages/Secret-Geometry/232627286800703">Facebook</a>.</span></h2>
 								<h3><span>Pages: <a href="http://www.facebook.com/CathodeApp">Cathode</a>, <a href="http://www.facebook.com/BlinkyTextEditor">Blinky</a></span></h3>
+								<!--
 								<div class="spacer50"></div>
 								<h2><span>Public code is on <a href="http://github.com/cjcaufield">Github</a>.</span></h2>
+								-->
 								<!--
 								<a href="mailto:pr@secretgeometry.com">pr@secretgeometry.com</a></p>
 								<a href="mailto:creative@secretgeometry.com">creative@secretgeometry.com</a></p>

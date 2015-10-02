@@ -9,19 +9,25 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<!-- Fontdeck javascript font loading. -->
+
+<!--
+
+Fontdeck javascript font loading.
+
+-->
 <script type="text/javascript">
 WebFontConfig = { fontdeck: { id: '59420' } };
 (function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
+	var wf = document.createElement('script');
+	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
 })();
 </script>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +37,27 @@ WebFontConfig = { fontdeck: { id: '59420' } };
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<!--
+
+Prevent FancyBox from showing popups on small screens.
+
+-->
+<script type="text/javascript">
+jQuery(function() {
+    jQuery('.popbox').fancybox({
+        onStart: function(link) {
+            if (jQuery(window).width() < 768) {
+				//alert("Blocking popup.")
+                return false;
+            } else {
+            	//alert("Allowing popup.")
+            }
+        }
+    });
+});
+</script>
+
 </head>
 
 <body <?php body_class(); ?>>

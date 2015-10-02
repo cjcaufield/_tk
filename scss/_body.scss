@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 	@extend .thick-heading-font;
 }
 
+.sans-serif {
+	@extend .thin-heading-font;
+}
+
 h4 {
 	margin-top: 20px;
 }
@@ -32,16 +36,28 @@ i {
 	@extend .body-font-italic;
 }
 
-a, a:hover, a:hover, a:focus {
+a, a:hover, a:focus {
 	color: $link-color;
+}
+
+a.alt-color, a.alt-color:hover, a.alt-color:hover, a.alt-color:focus {
+	color: $alt-link-color;
 }
 
 p a {
 	background-color: $lighter-green;
 }
 
+p a.alt-color {
+	background-color: $lighter-pink;
+}
+
 a:hover {
 	background-color: $primary-light-color;
+}
+
+a.alt-color:hover {
+	background-color: $secondary-light-color;
 }
 
 p.big-text {
@@ -62,10 +78,13 @@ p.big-text {
 	//background-image: url(/wp-content/uploads/hash.gif);
 	//background-repeat: repeat;
 	min-height: 100%;
-	//opacity: 0.5;
 	height: auto;
 	margin: 0 0;
 	padding: 0 0;
+}
+
+.dark-overlay {
+	background-color: $translucent-black-4;
 }
 
 // Make sure embeds and iframes fit their containers
